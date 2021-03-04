@@ -5,7 +5,8 @@ import shutil
 ##  DIRECTORIES
 
 #get current directory
-dir_cur = os.path.dirname(os.path.realpath(__file__))
+#dir_cur = os.path.dirname(os.path.realpath(__file__))
+dir_cur = dir_cur = os.getcwd()
 #set app name
 name_app = "cri2016rand"
 #set the working directory
@@ -39,7 +40,7 @@ for dc in dirs_copy:
 	comm = ("cp -r \"" + dp_src + "\" \"" + dp_tar + "\"")
 	print(comm)
 	os.system(comm)
-	
+
 #set working directory up
 dir_working = os.path.dirname(dir_cur)
 os.chdir(dir_working)

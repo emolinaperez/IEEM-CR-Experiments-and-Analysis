@@ -5,18 +5,17 @@ import sys
 import shutil
 
 #function to build dictionaries
-def build_dict(df_in):
-	#output dictionary
-	return dict([tuple(df_in.iloc[i]) for i in range(len(df_in))])
+def build_dict(df_in):return dict([tuple(df_in.iloc[i]) for i in range(len(df_in))])
 
 ##  DIRECTORIES
 
 #get current directory
-dir_cur = os.path.dirname(os.path.realpath(__file__))
+file =  "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15\\user-files\\cri2016rand\\Calib Runs 2021-02-24\\"
+dir_cur = os.path.dirname(os.path.realpath(file))
 #set app name
 name_app = "cri2016rand"
 #set the working directory
-dir_win = "/Volumes/[C] syme-j-PVM.hidden/Users/jsyme/Documents/Projects/SWCHE093-1000/IEEM-en-GAMS-with-EXCAP-2021-01-15"
+dir_win = "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-25"
 #directories for other files
 dir_save = os.path.join(dir_win, "save")
 dir_uf = os.path.join(dir_win, "user-files", name_app)
@@ -88,7 +87,7 @@ def check_x(str_in, paths):
         if p in str_in:
             check_q = True
     return check_q
-    
+
 
 ##  READ IN FILES
 
@@ -124,14 +123,14 @@ dict_output_clean = {}
 for fp in all_fp_clean:
 
 	print("#"*30 + "\nStarting file " + os.path.basename(fp) + "...")
-	
+
 	fp_out = fp.replace(dir_win, dir_cur)
-	
+
 	#read from the windows side
 	f_read = open(fp, "r")
 	rl = f_read.readlines()
 	f_read.close()
-	
+
 	rl_new = []
 	#range over the lines
 	for i in range(len(rl)):
@@ -158,12 +157,12 @@ for fp in all_fp_clean:
 
 		else:
 			rl_new.append(x)
-	
+
 	#export to the mac side
 	f_write = open(fp_out, "w")
 	f_write.writelines(rl_new)
 	f_write.close()
-	
+
 	#set output key
 	key_out = os.path.basename(fp)
 	dict_output_clean.update({key_out: rl_new})
@@ -221,7 +220,7 @@ def do_repl(str_in, dict_in, dict_scen):
 		dict_in.update({k: new_str})
 		#print("\tnew_str for " + str(k) + ": " + new_str)
 		#print("\t##DATASCEN## in new_str?\t" + str("##DATASCEN##" in new_str))
-	
+
 	str_out = str_in.copy()
 	#loop to replace
 	for i in range(len(str_out)):
@@ -233,7 +232,7 @@ def do_repl(str_in, dict_in, dict_scen):
 				line = line.replace(k, dict_in[k])
 		#update string list
 		str_out[i] = line
-	
+
 	return str_out
 
 
@@ -241,11 +240,11 @@ def do_repl(str_in, dict_in, dict_scen):
 for scen in all_runs:
 	print(header)
 	print("Starting data scenario: '" + str(scen) + "'...")
-	
+
 	#get data and sim
 	scen_dat = "data_" + str(dict_scen_to_dat[scen])
 	scen_sim = "sim_" + str(dict_scen_to_sim[scen])
-	
+
 	#update the file path save
 	dir_save_scen = dir_save.replace("save", "save_" + str(scen))
 	#make dirs
@@ -253,10 +252,10 @@ for scen in all_runs:
 		shutil.rmtree(dir_save_scen)
 	#create the new save directory
 	os.makedirs(dir_save_scen, exist_ok = True)
-	
-	
+
+
 	##  EXPORT THE DATA INCLUDE FILE
-	
+
 	print("\Exporting dim.inc...")
 	str_inc_dat_scen = dict_strs_in["inc_dat"].copy()
 	#copy the dictionary
@@ -268,10 +267,10 @@ for scen in all_runs:
 	f_new = open(fp_new, "w")
 	f_new.writelines(str_inc_dat_scen)
 	f_new.close()
-	
-	
+
+
 	##  EXPORT DATA.GMS AND RUN FOR EACH SCENARIO
-	
+
 	print("\tExporting data.gms...")
 	str_data_scen = dict_strs_in["data"].copy()
 	#copy the dictionary
@@ -286,7 +285,7 @@ for scen in all_runs:
 	#set windows path
 	fpw_new = fpw_gms_data.replace(".gms", "_" + str(scen) + ".gms")
 	dirw_save_scen = dir_save_scen.replace(dir_win, dirw_win).replace("/", "\\")
-	
+
 	#build windows command
 	comm = cmd_prlctrl.replace("##CMDAPP##", cmd_wingams)
 	comm = comm.replace("##CMDSCRIPT##", fpw_new + " s=" + dirw_save_scen + "\\data --NonIMv2=1")
@@ -294,17 +293,17 @@ for scen in all_runs:
 	print("Sending command:\n\t" + comm)
 	#run gams
 	#os.system(comm)
-	
-	
+
+
 	##  CALL THE GDXXRW FOR SIM
-	
+
 	print("\tCalling sim GDXXRW...")
 	#use simulation (it's only one line) -- windows code to send via prlctl
 	sim_gams_call = "$CALL GDXXRW user-files\\cri2016rand\\cri2016rand-##SIMSCEN##.xlsx index=layout!A1\n".replace("##SIMSCEN##", scen_sim)
 	#set temporary file path out
 	fn_tmp = "tmpsim_" + str(scen) + ".gms"
 	fp_tmp = os.path.join(dir_win, fn_tmp)
-	
+
 	if os.path.exists(fp_tmp):
 		os.remove(fp_tmp)
 	fpw_tmp = dirw_win + "\\" + fn_tmp
@@ -320,10 +319,10 @@ for scen in all_runs:
 	print("Sending command:\n\t" + comm)
 	#run gams
 	#os.system(comm)
-	
-	
+
+
 	##  EXPORT THE SIM.INC
-	
+
 	print("\Exporting sim.inc...")
 	str_inc_sim_scen = dict_strs_in["inc_sim"].copy()
 	#copy the dictionary
@@ -335,10 +334,10 @@ for scen in all_runs:
 	f_new = open(fp_new, "w")
 	f_new.writelines(str_inc_sim_scen)
 	f_new.close()
-	
-	
+
+
 	##  EXPORT THE SIM2.INC
-	
+
 	print("\Exporting sim2.inc...")
 	str_inc_sim2_scen = dict_strs_in["inc_sim2"].copy()
 	#copy the dictionary
@@ -350,10 +349,10 @@ for scen in all_runs:
 	f_new = open(fp_new, "w")
 	f_new.writelines(str_inc_sim2_scen)
 	f_new.close()
-	
-	
+
+
 	##  BUILD AND EXPORT SIM.GMS LOCALLY
-	
+
 	print("\tBuilding sim.gms...")
 	str_sim_scen = dict_output_clean["sim.gms"].copy()
 	#copy the dictionary
@@ -366,7 +365,7 @@ for scen in all_runs:
 	f_new = open(fp_gms_sim_out, "w")
 	f_new.writelines(str_sim_scen)
 	f_new.close()
-	
+
 	print("Data scenario: '" + str(scen) + "' complete.")
 	print(header)
 
@@ -405,4 +404,3 @@ comm = comm.replace("##CMDSCRIPT##", dirw_win + "\\" + os.path.basename(fp_py_ru
 #print("Sending command:\n\t" + comm)
 #run gams
 #os.system(comm)
-
