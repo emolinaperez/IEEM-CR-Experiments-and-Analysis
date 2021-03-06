@@ -1,14 +1,15 @@
 
-import os, os.path
-import shutil
-import pandas as pd
+import os, os.path;
+import shutil;
+import pandas as pd;
 
 
 
 ##  SET THE NAME OF THE RUNS (CALIBRATION) PACKAGE HERE
 nm_files_in = "Calib Runs 2021-02-26"
 ## FULL PATH OF RUN PACKAGE
-dir_files_in = os.path.join(os.getcwd(), nm_files_in)
+root = "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15\\user-files\\cri2016rand\\"
+dir_files_in = os.path.join(root, nm_files_in)
 
 #all excel files
 all_runs = [int(x.replace("r", "")) for x in os.listdir(dir_files_in) if ("." not in x) and (x[0] == "r")]
@@ -18,24 +19,26 @@ all_runs.sort()
 ##  SET TARGET DIRECTORIES HERE--I USED BOTH WINDOWS AND MAC DIRECTORIES, BUT YOU SHOULD BE ABLE TO STICK WITH dir_cp_mac ASSUMING THIS FILE IS AT THE SAME LEVEL OF "IEEM-en-GAMS-with-EXCAP-2021-01-15"
 
 #set directories to copy into
-dir_cp_mac = os.path.join(os.getcwd(), "IEEM-en-GAMS-with-EXCAP-2021-01-15", "user-files", "cri2016rand")
+root2 = "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15\\user-files\\cri2016rand\\test\\"
+dir_cp_mac = os.path.join(root2)
 #dir_cp_win = "/Volumes/[C] syme-j-PVM.hidden/Users/jsyme/Documents/Projects/SWCHE093-1000/IEEM-en-GAMS-with-EXCAP-2021-01-15/user-files/cri2016rand"
 
 df_ed = []
 #loop
 for r in all_runs:
+    #r= 1
     r_str = "r" + str(r)
     dir_cur = os.path.join(dir_files_in, r_str)
     #get file names
     fn_xlsx = [x for x in os.listdir(dir_cur)]
-    
+
     fn_dat = [x for x in fn_xlsx if "-data" in x]
     fn_sim = [x for x in fn_xlsx if "-sim" in x]
 
     if min(len(fn_dat), len(fn_sim)) == 0:
-        
+
         print("\n\tIssue with run number " + str(r) + "\n")
-        
+
     else:
         #data file names
         fn_dat = fn_dat[0]
@@ -61,18 +64,17 @@ for r in all_runs:
 
         #copy paths
         shutil.copyfile(fp_dat, fp_dat_new)
-        shutil.copyfile(fp_dat, fp_dat_new_win)
+        #shutil.copyfile(fp_dat, fp_dat_new_win)
         shutil.copyfile(fp_sim, fp_sim_new)
-        shutil.copyfile(fp_sim, fp_sim_new_win)
+        #shutil.copyfile(fp_sim, fp_sim_new_win)
 
         print("run " + str(r) + " done.")
 
 df_ed_out = pd.DataFrame(df_ed, columns = ["run_id", "data", "sim"])
 
 #export design
-dir_ed_out = os.path.dirname(os.getcwd())
+root3 = "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15\\user-files\\cri2016rand\\test\\"
+dir_ed_out = os.path.dirname(root3)
 #dir_ed_out_win = os.path.dirname(os.path.dirname(dir_cp_win))
 fn_ed = "ieem_exp_design.csv"
 df_ed_out.to_csv(os.path.join(dir_ed_out, fn_ed), index = None, encoding = "UTF-8")
-df_ed_out.to_csv(os.path.join(dir_ed_out_win, fn_ed), index = None, encoding = "UTF-8")
-
