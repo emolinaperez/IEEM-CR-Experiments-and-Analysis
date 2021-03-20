@@ -19,7 +19,7 @@ all_runs.sort()
 ##  SET TARGET DIRECTORIES HERE--I USED BOTH WINDOWS AND MAC DIRECTORIES, BUT YOU SHOULD BE ABLE TO STICK WITH dir_cp_mac ASSUMING THIS FILE IS AT THE SAME LEVEL OF "IEEM-en-GAMS-with-EXCAP-2021-01-15"
 
 #set directories to copy into
-root2 = "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15\\user-files\\cri2016rand\\test\\"
+root2 = "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15\\user-files\\cri2016rand\\cri2016rand_test\\"
 dir_cp_mac = os.path.join(root2)
 #dir_cp_win = "/Volumes/[C] syme-j-PVM.hidden/Users/jsyme/Documents/Projects/SWCHE093-1000/IEEM-en-GAMS-with-EXCAP-2021-01-15/user-files/cri2016rand"
 
@@ -73,7 +73,7 @@ for r in all_runs:
 df_ed_out = pd.DataFrame(df_ed, columns = ["run_id", "data", "sim"])
 
 #export design
-root3 = "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15\\user-files\\cri2016rand\\test\\"
+root3 = "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15\\user-files\\cri2016rand\\cri2016rand_test\\"
 dir_ed_out = os.path.dirname(root3)
 #dir_ed_out_win = os.path.dirname(os.path.dirname(dir_cp_win))
 fn_ed = "ieem_exp_design.csv"

@@ -3,13 +3,14 @@ import shutil
 import pandas as pd
 
 #set the working directory
-dir_cur = os.path.dirname(os.path.realpath(__file__))
-dir_mod = "/home/RAND.ORG/jsyme/IEEM-en-GAMS-with-EXCAP-2021-01-15"
+file = "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15\\user-files\\cri2016rand\\cri2016rand_test\\ieem_exp_design.csv"
+dir_cur = os.path.dirname(os.path.realpath(file))
+dir_mod = "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15\\"
 os.chdir(dir_mod)
 #get
 
 #file path for experimental design
-fp_csv_exp_design = os.path.join(dir_mod, "ieem_exp_design.csv")
+fp_csv_exp_design = os.path.join(dir_mod, "ieem_exp_design.csv") #place file inside model file
 
 ##  EXPERIMENTAL DESIGN
 
@@ -36,13 +37,14 @@ all_gdx = get_gdx()
 
 for r in all_runs:
 	#notify
+	#r = 1 # for testing
 	print("#"*30 + "\n###\n" + "###   STARTING run_id = " + str(r) + "\n###\n" + "#"*30 + "\n")
 	#set the previous command
 	prev = "data"
 
 	for i in range(len(coms)):
-
-		cur_coms = "%s_%s"%(coms[i], r)
+        #i = 1 # for testing 
+ 		cur_coms = "%s_%s"%(coms[i], r)
 		#check if scenario-dependent path exists
 		if not os.path.exists(cur_coms + ".gms"):
 			cur_coms = str(coms[i])

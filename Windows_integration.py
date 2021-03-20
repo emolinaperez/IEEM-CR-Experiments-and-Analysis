@@ -1,3 +1,81 @@
+#===========================================================================================
+# PART 1: TRANSFORM THE EXPERIMENTAL DESIGN INTO NEW FILES FOR RUNNING AND CREATE EXPERIMENTAL DESIGN TABLE
+#===========================================================================================
+
+import os, os.path
+import shutil
+import pandas as pd
+
+## root directory
+root = "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15\\"
+
+##  SET THE NAME OF THE RUNS (CALIBRATION) PACKAGE HERE
+nm_files_in = "user-files\\cri2016rand\\Calib Runs 2021-02-27"
+
+## FULL PATH OF RUN PACKAGE
+dir_files_in = os.path.join(root, nm_files_in)
+
+#all excel files
+all_runs = [int(x.replace("r", "")) for x in os.listdir(dir_files_in) if ("." not in x) and (x[0] == "r")]
+all_runs.sort()
+
+#set directories to copy into
+nm_files_out = "user-files\\cri2016rand\\test"
+dir_cp_mac = os.path.join(root, nm_files_out )
+
+df_ed = []
+#loop
+for r in all_runs:
+    #r= 1
+    r_str = "r" + str(r)
+    dir_cur = os.path.join(dir_files_in, r_str)
+    #get file names
+    fn_xlsx = [x for x in os.listdir(dir_cur)]
+
+    fn_dat = [x for x in fn_xlsx if "-data" in x]
+    fn_sim = [x for x in fn_xlsx if "-sim" in x]
+
+    if min(len(fn_dat), len(fn_sim)) == 0:
+
+        print("\n\tIssue with run number " + str(r) + "\n")
+
+    else:
+        #data file names
+        fn_dat = fn_dat[0]
+        fn_sim = fn_sim[0]
+        #new names
+        fn_dat_new = fn_dat.replace("-data", "-data_d" + str(r)).replace("new_", "")
+        fn_sim_new = fn_sim.replace("-sim", "-sim_s" + str(r)).replace("new_", "")
+        #get scenarios for experimental design
+        ed_row = [r, fn_dat_new.split("_")[1].replace(".xlsx", ""), fn_sim_new.split("_")[1].replace(".xlsx", "")]
+        df_ed.append(ed_row)
+
+        ##  copy over
+
+        #set paths
+        fp_dat = os.path.join(dir_cur, fn_dat)
+        fp_sim = os.path.join(dir_cur, fn_sim)
+        #data
+        fp_dat_new = os.path.join(dir_cp_mac, fn_dat_new)
+        #sim
+        fp_sim_new = os.path.join(dir_cp_mac, fn_sim_new)
+
+        #copy paths
+        shutil.copyfile(fp_dat, fp_dat_new)
+        shutil.copyfile(fp_sim, fp_sim_new)
+
+
+        print("run " + str(r) + " done.")
+
+df_ed_out = pd.DataFrame(df_ed, columns = ["run_id", "data", "sim"])
+#export design
+fn_ed = "ieem_exp_design.csv"
+df_ed_out.to_csv(os.path.join(root, nm_files_out, fn_ed), index = None, encoding = "UTF-8")
+
+#===========================================================================================
+# PART 2: TRANSFORM THE EXPERIMENTAL DESIGN INTO NEW FILES FOR RUNNING AND CREATE EXPERIMENTAL DESIGN TABLE
+#===========================================================================================
+
 import os, os.path
 import numpy as np
 import pandas as pd
@@ -7,92 +85,33 @@ import shutil
 #function to build dictionaries
 def build_dict(df_in):return dict([tuple(df_in.iloc[i]) for i in range(len(df_in))])
 
-##  DIRECTORIES
+#get experimental design
+fp_csv_exp_design = os.path.join(root, nm_files_out, fn_ed)
+df_exp_design = pd.read_csv(fp_csv_exp_design)
+df_exp_design = df_exp_design.sort_values(by = ["run_id"]).reset_index(drop = True)
 
-#get current directory
-file =  "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15\\user-files\\"
-dir_cur = os.path.dirname(os.path.realpath(file))
-#set app name
-name_app = "cri2016rand"
-#set the working directory
-dir_win = "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-25"
-#directories for other files
-dir_save = os.path.join(dir_win, "save")
-#dir_uf = os.path.join(dir_win, "user-files", name_app)
-dir_uf = "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15\\user-files\\cri2016rand\\cri2016rand_test\\"
-
-###   FILE PATHS
-
-##  MAC SIDE
-
-#file path for experimental design
-fp_csv_exp_design = os.path.join("C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15\\user-files\\cri2016rand\\cri2016rand_test\\", "ieem_exp_design.csv")
+#define paths for model
 #file paths for files to read in/replace
-fp_gms_data = os.path.join(dir_win, "data.gms")
-fp_gms_sim = os.path.join(dir_win, "sim.gms")
-fp_gms_repbaseyr = os.path.join(dir_win, "repbaseyr.gms")
-fp_gms_repenviro = os.path.join(dir_win, "repenviro.gms")
-fp_gms_reppov = os.path.join(dir_win, "reppov.gms")
+fp_gms_data = os.path.join(root, "data.gms")
+fp_gms_sim = os.path.join(root, "sim.gms")
+fp_gms_repbaseyr = os.path.join(root, "repbaseyr.gms")
+fp_gms_repenviro = os.path.join(root, "repenviro.gms")
+fp_gms_reppov = os.path.join(root, "reppov.gms")
 
 #file path for gams include files
+name_app = "cri2016rand"
+dir_uf = os.path.join(root, "user-files", name_app)
 fp_inc_data = os.path.join(dir_uf, ("##APP##-data2.inc").replace("##APP##", name_app))
 fp_inc_sim = os.path.join(dir_uf, ("##APP##-sim.inc").replace("##APP##", name_app))
 fp_inc_sim2 = os.path.join(dir_uf, ("##APP##-sim2.inc").replace("##APP##", name_app))
-#python scripts
-fp_py_run_gdxxrw = os.path.join("C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-CR-Experiments-and-Analysis\\IEEM-en-GAMS-with-EXCAP-2021-01-15_shelldir\\", "python_run_gdxxrw.py")
 
-
-##  WINDOWS SIDE
-
-#some windows paths
-#dirw_win_home = "C:\\Users\\jsyme"
-#dirw_win = dirw_win_home + "\\Documents\\Projects\\SWCHE093-1000\\IEEM-en-GAMS-with-EXCAP-2021-01-15"
-#dirw_uf = dirw_win + "\\user-files\\##APP##".replace("##APP##", name_app)
-#some windows file paths
-fpw_gms_data = fp_gms_data # dirw_win + "\\" + os.path.basename(fp_gms_data)
-fpw_inc_data = fp_inc_data  # dirw_uf + "\\" + os.path.basename(fp_inc_data)
-fpw_inc_sim = fp_inc_sim # dirw_uf + "\\" + os.path.basename(fp_inc_sim)
-
-#set some default commands
-cmd_prlctrl = "prlctl exec \"syme-j-PVM\" cmd /c \"##CMDAPP## ##CMDSCRIPT##\"" #this I need to ask james what is doing
-cmd_winpy = "C:\\Users\\L03054557\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe" # send directory to python
-cmd_wingams = "C:\\GAMS\\win64\\25.1\\gams.exe"
-
-########################
-#    INITIALIZATION    #
-########################
-
-##  EXPERIMENTAL DESIGN
-
-#get experimental design
-df_exp_design = pd.read_csv(fp_csv_exp_design)
-df_exp_design = df_exp_design.sort_values(by = ["run_id"]).reset_index(drop = True)
 #build dictionaries
 dict_scen_to_dat = build_dict(df_exp_design[["run_id", "data"]])
 dict_scen_to_sim = build_dict(df_exp_design[["run_id", "sim"]])
 #all runs
-all_runs = list(df_exp_design["run_id"])
-
-
-##  DIRECTORIES FOR MOVING FROM WIN TO LINUX FS
-
-#all subdirectories
-all_subdirs = [x for x in os.listdir(dir_win) if ("." not in x)]
-all_dirs_check = [(x + "\\") for x in all_subdirs]
-#function for checking
-def check_x(str_in, paths):
-    check_q = False
-    for p in paths:
-        if p in str_in:
-            check_q = True
-    return check_q
-
+#all_runs = list(df_exp_design["run_id"]) # this object already exists above
 
 ##  READ IN FILES
-
-#I think I can take it from here
-# by directly modifying the dictionaries
-
 dict_fps_in = {
 	"data": fp_gms_data,
 	"sim": fp_gms_sim,
@@ -107,7 +126,6 @@ dict_fps_in = {
 dict_strs_in = {}
 #loop to readlines
 for fshort in dict_fps_in.keys():
-    #fshort= "repenviro" #just for testing the loop
 	f_tmp = open(dict_fps_in[fshort], "r") # this line opens the inc or gms files
 	str_tmp = f_tmp.readlines()  #this line reads the lines inside those files
 	f_tmp.close() #this line closes the connection
@@ -118,9 +136,6 @@ for fshort in dict_fps_in.keys():
 #dict_strs_in["data"]
 #dict_strs_in["inc_sim2"]
 
-
-#continue from here tomorrow
-
 ##  CLEAN FILES THAT NEED TO BE CLEANED
 
 #output dictionary mapping file paths to clean to their output paths
@@ -128,11 +143,13 @@ all_fp_clean = [fp_gms_sim, fp_inc_sim] #this dictonary connects the sim.inc to 
 #add to dictionary
 dict_output_clean = {}
 
+#define folders of where to read the sim.gms and sim.inc files and where to save these, this may not needed
+dir_win = os.path.join(root,  "" ) #where to read them
+dir_cur = os.path.join(root,  "user-files\\cri2016rand\\test\\" ) #where to save them
+
 #loop over files to export linux versions
-#this loop is making sure the file paths make sense in unix system
-# we do need this loop because it creates the dict_ouput_clean dictionary
 for fp in all_fp_clean:
-    # fp = all_fp_clean[0] #for testing
+    # fp = all_fp_clean[1] #for testing
 	print("#"*30 + "\nStarting file " + os.path.basename(fp) + "...")
 
 	fp_out = fp.replace(dir_win, dir_cur) #this line just updates the path from windows system to linux system, what is the difference between dir cur and dir win?
@@ -142,52 +159,25 @@ for fp in all_fp_clean:
 	rl = f_read.readlines() #this opens the sim.gms file
 	f_read.close()
 
-	rl_new = []
-	#range over the lines, this loop updates the sim file in windows such that it works on linux
-	for i in range(len(rl)):
-        #i = 1 #for testing
-		x = str(rl[i])
-		if check_x(x, all_dirs_check):
-			print(i)
-			x = x.split(" ")
-			x_new = ""
-
-			for k in range(len(x)):
-				x_sub = x[k]
-
-				if check_x(x_sub, all_dirs_check):
-					x_sub_new = x_sub.replace("\\", "/")
-				else:
-					x_sub_new = x_sub
-
-				if len(x_new) == 0:
-					x_new = x_sub_new
-				else:
-					x_new = x_new + " " + x_sub_new
-
-			rl_new.append(x_new)
-
-		else:
-			rl_new.append(x)
-
-	#export to the mac side
-#	f_write = open(fp_out, "w")
-#	f_write.writelines(rl_new) #do not write yet
-#	f_write.close()
+	#export to the mac side, I think we may not need to write this, just putting the files in the dictionary should be enough
+	f_write = open(fp_out, "w")
+	f_write.writelines(rl)
+	f_write.close()
 
 	#set output key
 	key_out = os.path.basename(fp)
-	dict_output_clean.update({key_out: rl_new}) # this dictionary does have the sim files
-
-#this finishes the loop
+	dict_output_clean.update({key_out: rl}) # this dictionary does have the sim files
 
 
 #############################
 #    LOOP OVER SCENARIOS    #
 #############################
 #the line below is an adjustment to the only windowns side system
-dirw_win = dir_win
-#
+dirw_win = root
+# watch out for the double diagonalas after dirw_win +
+# also note that this dictionay define this root for the excel files to exist
+#C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15\\\\user-files\\cri2016rand\\cri2016rand-data_d1.xlsx
+#so basically remove the test directory and make to to #C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15\\\\user-files\\cri2016rand\\
 dict_scen_repl = {
 	"data": {
 		"GDXXRW user-files\\%app%\\%app%-data.xlsx index=layout!A1": ("GDXXRW " + dirw_win + "\\user-files\\%app%\\%app%-##DATASCEN##.xlsx index=layout!A1"),
@@ -225,6 +215,7 @@ dict_scen_repl = {
 }
 print("HERE")
 header = "\n" + "#"*30 + "\n"
+
 #function for replacing lines
 #I think we need to keep this function
 def do_repl(str_in, dict_in, dict_scen):
@@ -251,8 +242,8 @@ def do_repl(str_in, dict_in, dict_scen):
 
 	return str_out
 
-
 #loop over scenarios
+dir_save = os.path.join(root, "save")
 for scen in all_runs:
     #scen = 1 #for testing
 	print(header)
@@ -272,7 +263,6 @@ for scen in all_runs:
 
 
 	##  EXPORT THE DATA INCLUDE FILE
-
 	print("\Exporting dim.inc...")
 	str_inc_dat_scen = dict_strs_in["inc_dat"].copy()
 	#copy the dictionary
@@ -300,18 +290,19 @@ for scen in all_runs:
 	f_new.writelines(str_data_scen)
 	f_new.close()
 	#set windows path
-	fpw_new = fpw_gms_data.replace(".gms", "_" + str(scen) + ".gms")
-	dirw_save_scen = dir_save_scen.replace(dir_win, dirw_win).replace("/", "\\")
+#	fpw_new = fpw_gms_data.replace(".gms", "_" + str(scen) + ".gms")
+#	dirw_save_scen = dir_save_scen.replace(dir_win, dirw_win).replace("/", "\\")
 
 	#build windows command
-	comm = cmd_prlctrl.replace("##CMDAPP##", cmd_wingams) #we need to chnage this command
-	comm = comm.replace("##CMDSCRIPT##", fpw_new + " s=" + dirw_save_scen + "\\data --NonIMv2=1")
+#	comm = cmd_prlctrl.replace("##CMDAPP##", cmd_wingams) #we need to chnage this command
+#	comm = comm.replace("##CMDSCRIPT##", fpw_new + " s=" + dirw_save_scen + "\\data --NonIMv2=1")
 	#notify
-	print("Sending command:\n\t" + comm)
+#	print("Sending command:\n\t" + comm)
 	#run gams
 	#os.system(comm)
 
 
+#continue from here tomorrow
 	##  CALL THE GDXXRW FOR SIM
 
 	print("\tCalling sim GDXXRW...")
@@ -323,17 +314,17 @@ for scen in all_runs:
 
 	if os.path.exists(fp_tmp):
 		os.remove(fp_tmp)
-	fpw_tmp = dirw_win + "\\" + fn_tmp
+	fpw_tmp = dirw_win + "\\" + fn_tmp # this is going into the main model folder, shall it go there?
 	#write to temporary file
 	f_tmp = open(fp_tmp, "w")
 	f_tmp.writelines(sim_gams_call)
 	f_tmp.close()
 
 	#build windows command
-	comm = cmd_prlctrl.replace("##CMDAPP##", cmd_wingams)
-	comm = comm.replace("##CMDSCRIPT##", fpw_tmp)
+#	comm = cmd_prlctrl.replace("##CMDAPP##", cmd_wingams)
+#	comm = comm.replace("##CMDSCRIPT##", fpw_tmp)
 	#notify
-	print("Sending command:\n\t" + comm)
+#	print("Sending command:\n\t" + comm)
 	#run gams
 	#os.system(comm)
 
@@ -377,7 +368,7 @@ for scen in all_runs:
 	#update the string
 	str_sim_scen = do_repl(str_sim_scen, dict_r_sim, {"##RUNID##": str(scen)})
 	#set output file path
-	fp_gms_sim_out = fp_gms_sim.replace(dir_win, dir_cur).replace(".gms", "_" + str(scen) + ".gms")
+	fp_gms_sim_out = fp_gms_sim.replace(dir_win, dir_cur).replace(".gms", "_" + str(scen) + ".gms") # it is printing this in the test folder, not sure, this sould be the case
 	#write
 	f_new = open(fp_gms_sim_out, "w")
 	f_new.writelines(str_sim_scen)
@@ -387,37 +378,6 @@ for scen in all_runs:
 	print(header)
 
 
-##  CLEAN REP.GMS FILES ONCE
-
-#if False:
-#	for fn in ["repbaseyr", "repenviro", "reppov"]:
-#        # fn = "repbaseyr" #for testing
-#		print("\Cleaning %s.gms..."%(fn))
-#		str_gms_rep = dict_strs_in[fn].copy()
-#		#copy the dictionary
-#		dict_r_gms_rep = dict_scen_repl[fn].copy()
-#		#update the string
-#		str_gms_rep = do_repl(str_gms_rep, dict_r_gms_rep, {})
-#		#set output file path
-#		fp_gms_rep_out = dict_fps_in[fn].replace(dir_win, dir_cur)
-#		#write
-#		f_new = open(fp_gms_rep_out, "w")
-#		f_new.writelines(str_gms_rep)
-#		f_new.close()
-
-
-
-#####################################
-#    COPY PY SCRIPT OVER AND RUN    #
-#####################################
-
-print("Copying " + os.path.basename(fp_py_run_gdxxrw) + " to Parallels and running...")
-#copy over
-shutil.copyfile(fp_py_run_gdxxrw, fp_py_run_gdxxrw.replace(dir_cur, dir_win))
-#build prlctl command
-comm = cmd_prlctrl.replace("##CMDAPP##", cmd_winpy)
-comm = comm.replace("##CMDSCRIPT##", dirw_win + "\\" + os.path.basename(fp_py_run_gdxxrw))
-#notify
-#print("Sending command:\n\t" + comm)
-#run gams
-#os.system(comm)
+#===========================================================================================
+# PART 3: TRANSFORM THE EXPERIMENTAL DESIGN INTO NEW FILES FOR RUNNING AND CREATE EXPERIMENTAL DESIGN TABLE
+#===========================================================================================
