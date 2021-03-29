@@ -1,7 +1,6 @@
 #===========================================================================================
 # PART 1: TRANSFORM THE EXPERIMENTAL DESIGN INTO NEW FILES FOR RUNNING AND CREATE EXPERIMENTAL DESIGN TABLE
 #===========================================================================================
-
 import os, os.path
 import shutil
 import pandas as pd
@@ -20,7 +19,7 @@ all_runs = [int(x.replace("r", "")) for x in os.listdir(dir_files_in) if ("." no
 all_runs.sort()
 
 #set directories to copy into
-nm_files_out = "user-files\\cri2016rand\\test"
+nm_files_out = "user-files\\cri2016rand\\"
 dir_cp_mac = os.path.join(root, nm_files_out )
 
 df_ed = []
@@ -280,21 +279,6 @@ for scen in all_runs:
 
 	##  EXPORT DATA.GMS AND RUN FOR EACH SCENARIO
 
-#so this chuck the substitution is not working
-# the correct file should do something like:
-#* read data from excel file
-#*$IF %NonIMv2%==1 $CALL GDXXRW user-files\%app%\%app%-data.xlsx index=layout!A1 trace=3 log=gdxxrw.log
-#$IF %NonIMv2%==1 $CALL GDXXRW user-files\%app%\%app%-data.xlsx index=layout!A1
-#$IF %NonIMv2%==1 $GDXIN %app%-data.gdx
-
-#the incorrect process happening now is doing this:
-#* read data from excel file
-#*$IF %NonIMv2%==1 $CALL GDXXRW C:\Users\L03054557\OneDrive\Edmundo-ITESM\3.Proyectos\30. Costa Rica COVID19\IEEM-en-GAMS-with-EXCAP-2021-01-15\\user-files\%app%\%app%-data_d1.xlsx index=layout!A1 trace=3 log=gdxxrw.log
-#$IF %NonIMv2%==1 $CALL GDXXRW C:\Users\L03054557\OneDrive\Edmundo-ITESM\3.Proyectos\30. Costa Rica COVID19\IEEM-en-GAMS-with-EXCAP-2021-01-15\\user-files\%app%\%app%-data_d1.xlsx index=layout!A1
-#$IF %NonIMv2%==1 $GDXIN %app%-data_d1.gdx
-
-
-
 	print("\tExporting data.gms...")
 	str_data_scen = dict_strs_in["data"].copy()
 	#copy the dictionary
@@ -327,11 +311,11 @@ for scen in all_runs:
 	sim_gams_call = "$CALL GDXXRW user-files\\cri2016rand\\cri2016rand-##SIMSCEN##.xlsx index=layout!A1\n".replace("##SIMSCEN##", scen_sim)
 	#set temporary file path out
 	fn_tmp = "tmpsim_" + str(scen) + ".gms"
-	fp_tmp = os.path.join(dir_win, fn_tmp)
+	fp_tmp = os.path.join(root, fn_tmp)
 
 	if os.path.exists(fp_tmp):
 		os.remove(fp_tmp)
-	fpw_tmp = dirw_win + "\\" + fn_tmp # this is going into the main model folder, shall it go there?
+	fpw_tmp = root + "\\" + fn_tmp # this is going into the main model folder, shall it go there?
 	#write to temporary file
 	f_tmp = open(fp_tmp, "w")
 	f_tmp.writelines(sim_gams_call)
@@ -413,7 +397,8 @@ import shutil
 #os.chdir(dir_cur)
 #set base command
 #fpw_gams = "C:\\GAMS\\win64\\30.3\\gams.exe"
-fpw_gams = "C:\\GAMS\\win64\\25.1\\gams.exe"
+#fpw_gams = "C:\\GAMS\\win64\\25.1\\gams.exe"
+fpw_gams = "C:\\GAMS\\34\\gams.exe"
 
 #file path for experimental design
 #fp_csv_exp_design = os.path.join(dir_cur, "ieem_exp_design.csv")
@@ -531,8 +516,8 @@ for r in all_runs:
 		#get new file
 		new_gdx = list(all_gdx_cur - all_gdx)
 		for fg in new_gdx:
-			fp_old = os.path.join(dir_mod, fg)
-			fp_new = os.path.join(dir_mod, fg.replace(".gdx", "_run-" + str(r) + ".gdx"))
+			fp_old = os.path.join(root, fg)
+			fp_new = os.path.join(root, fg.replace(".gdx", "_run-" + str(r) + ".gdx"))
 			os.rename(fp_old, fp_new)
 			#notify
 			print("\tRenamed '%s' to '%s'"%(os.path.basename(fp_old), os.path.basename(fp_new)))
@@ -542,19 +527,19 @@ for r in all_runs:
 		print("Model " + cur_coms + " done.\n\n")
 
 	#check for gdx files to delete
-	fns_rm =[x for x in os.listdir(dir_mod) if (x[-4:] == ".lst")]
-	fns_rm = fns_rm + [x for x in os.listdir(dir_mod) if (x[-4:] == ".gdx") and (("reppov" in x) or ("repenviro" in x) or ("repbaseyr" in x))]
+	fns_rm =[x for x in os.listdir(root) if (x[-4:] == ".lst")]
+	fns_rm = fns_rm + [x for x in os.listdir(root) if (x[-4:] == ".gdx") and (("reppov" in x) or ("repenviro" in x) or ("repbaseyr" in x))]
 	fns_rm = fns_rm + ["report-cri2016rand_run-" + str(r) + ".gdx"]
 
 	#loop to remove
 	for fn in fns_rm:
-		fn_rm = os.path.join(dir_mod, fn)
+		fn_rm = os.path.join(root, fn)
 		print("\tRemoving " + fn_rm + "...")
 		os.remove(fn_rm)
 	#update gdx files to account for lost report file
 	all_gdx = get_gdx()
 
-	fp_rm = os.path.join(dir_mod, "save_" + str(r))
+	fp_rm = os.path.join(root, "save_" + str(r))
 	#remove the save directory
 	if os.path.exists(fp_rm):
 		print("Removing path '" + fp_rm + "'...")
@@ -585,14 +570,14 @@ print(header)
 print("\nMoving GDX files...")
 #then, copy in
 for fn in all_copy:
-	com = "mv " + fn + " " + os.path.join(tmp_dir, fn)
+	com = "move " + fn + " " + os.path.join(tmp_dir, fn)
 	print("\nSending:\n\t'" + com + "'...")
 	os.system(com)
 #then, create tarball
-comm_targz = "COPYFILE_DISABLE=1 tar -cvzf ieem_model_results.tar.gz " + tmp_dir + "/"
-print("\nSending:\n\t'" + comm_targz + "'...")
-os.system(comm_targz)
-print("Successfully created tar gz. Removing temporary directory...")
+#comm_targz = "COPYFILE_DISABLE=1 tar -cvzf ieem_model_results.tar.gz " + tmp_dir + "/"
+#print("\nSending:\n\t'" + comm_targz + "'...")
+#os.system(comm_targz)
+#print("Successfully created tar gz. Removing temporary directory...")
 
 #delete the temporary directory
 shutil.rmtree(tmp_dir)
