@@ -1,0 +1,166 @@
+Year,GDP growth [percent],Unemployment [percent],Employment [people],sector,class,sector-en,class-en
+2010,5,9.2,1870857.67,total,total,total,total
+2011,4.3,10.5,1843721.50,total,total,total,total
+2012,4.8,9.8,1990711.08,total,total,total,total
+2013,2.3,8.3,2033435.17,total,total,total,total
+2014,3.5,9.7,2059820.83,total,total,total,total
+2015,3.6,9.6,2054201.08,total,total,total,total
+2016,4.2,9.5,2001477.33,total,total,total,total
+2017,3.9,9.3,2040625.50,total,total,total,total
+2018,2.7,12,2137294.58,total,total,total,total
+2019,2.1,12.4,2181818.33,total,total,total,total
+2020,-5.5,22,1890229.67,total,total,total,total
+2010,,,207014.83,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector
+2011,,,200078.50,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector
+2012,,,202787.58,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector
+2013,,,200410.67,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector
+2014,,,235156.75,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector
+2015,,,217263.30,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector
+2016,,,242568.50,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector
+2017,,,255963.33,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector
+2018,,,262229.33,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector
+2019,,,259934.42,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector
+2020,,,242420.38,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector
+2010,,,203319.17,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector
+2011,,,200981.42,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector
+2012,,,194878.58,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector
+2013,,,181309.42,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector
+2014,,,195435.00,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector
+2015,,,199301.91,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector
+2016,,,203772.00,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector
+2017,,,205885.92,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector
+2018,,,231992.08,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector
+2019,,,225698.67,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector
+2020,,,198631.88,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector
+2010,,,105069.17,Construcción,Sector secundario,Construction,Secondary sector
+2011,,,111819.58,Construcción,Sector secundario,Construction,Secondary sector
+2012,,,123740.83,Construcción,Sector secundario,Construction,Secondary sector
+2013,,,112921.67,Construcción,Sector secundario,Construction,Secondary sector
+2014,,,138284.08,Construcción,Sector secundario,Construction,Secondary sector
+2015,,,122612.73,Construcción,Sector secundario,Construction,Secondary sector
+2016,,,128176.92,Construcción,Sector secundario,Construction,Secondary sector
+2017,,,132179.83,Construcción,Sector secundario,Construction,Secondary sector
+2018,,,148807.25,Construcción,Sector secundario,Construction,Secondary sector
+2019,,,150287.83,Construcción,Sector secundario,Construction,Secondary sector
+2020,,,124424.00,Construcción,Sector secundario,Construction,Secondary sector
+2010,,,44535.83,"Communication and services, public administration and others",Sector secundario,"Communication and services, public administration and others",Secondary sector
+2011,,,38289.33,"Communication and services, public administration and others",Sector secundario,"Communication and services, public administration and others",Secondary sector
+2012,,,39041.75,"Communication and services, public administration and others",Sector secundario,"Communication and services, public administration and others",Secondary sector
+2013,,,39747.83,"Communication and services, public administration and others",Sector secundario,"Communication and services, public administration and others",Secondary sector
+2014,,,36173.58,"Communication and services, public administration and others",Sector secundario,"Communication and services, public administration and others",Secondary sector
+2015,,,37969.41,"Communication and services, public administration and others",Sector secundario,"Communication and services, public administration and others",Secondary sector
+2016,,,37741.08,"Communication and services, public administration and others",Sector secundario,"Communication and services, public administration and others",Secondary sector
+2017,,,31789.25,"Communication and services, public administration and others",Sector secundario,"Communication and services, public administration and others",Secondary sector
+2018,,,30081.75,"Communication and services, public administration and others",Sector secundario,"Communication and services, public administration and others",Secondary sector
+2019,,,27276.08,"Communication and services, public administration and others",Sector secundario,"Communication and services, public administration and others",Secondary sector
+2020,,,28385.50,"Communication and services, public administration and others",Sector secundario,"Communication and services, public administration and others",Secondary sector
+2010,,,391186.83,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2011,,,379863.92,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2012,,,399164.00,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2013,,,428166.33,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2014,,,400530.00,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2015,,,395735.32,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2016,,,374434.75,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2017,,,375352.17,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2018,,,367770.50,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2019,,,350379.08,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2020,,,301771.13,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2010,,,96504.50,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services
+2011,,,86619.33,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services
+2012,,,108089.33,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services
+2013,,,120345.25,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services
+2014,,,100880.42,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services
+2015,,,99839.76,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services
+2016,,,101878.33,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services
+2017,,,100384.83,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services
+2018,,,118938.33,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services
+2019,,,119281.42,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services
+2020,,,100368.88,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services
+2010,,,98492.83,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services
+2011,,,98763.58,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services
+2012,,,104938.08,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services
+2013,,,118271.92,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services
+2014,,,119321.42,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services
+2015,,,112175.82,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services
+2016,,,121191.83,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services
+2017,,,130899.92,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services
+2018,,,133793.42,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services
+2019,,,141179.33,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services
+2020,,,105974.50,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services
+2010,,,46124.50,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services
+2011,,,48755.08,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services
+2012,,,46074.33,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services
+2013,,,50801.17,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services
+2014,,,50124.58,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services
+2015,,,48173.70,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services
+2016,,,46517.58,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services
+2017,,,41005.42,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services
+2018,,,49892.75,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services
+2019,,,47126.50,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services
+2020,,,41327.50,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services
+2010,,,128402.67,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2011,,,130684.83,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2012,,,153473.92,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2013,,,158515.08,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2014,,,174791.33,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2015,,,154904.56,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2016,,,166372.25,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2017,,,175475.33,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2018,,,182995.25,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2019,,,191428.83,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2020,,,177254.38,"Commerce, repairs,professional and administrative activities",Sector comercio y servicios,"Commerce, repairs,professional and administrative activities",Commerce and services
+2010,,,108759.50,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2011,,,101834.42,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2012,,,97816.92,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2013,,,95941.42,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2014,,,87005.08,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2015,,,96098.62,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2016,,,80940.75,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2017,,,86526.42,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2018,,,79251.92,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2019,,,95603.92,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2020,,,84660.88,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2010,,,187981.50,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services
+2011,,,194579.17,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services
+2012,,,214988.08,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services
+2013,,,230863.83,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services
+2014,,,211900.33,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services
+2015,,,208146.83,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services
+2016,,,204433.00,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services
+2017,,,216267.42,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services
+2018,,,203976.50,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services
+2019,,,231193.33,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services
+2020,,,224202.25,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services
+2010,,,130306.00,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2011,,,124829.92,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2012,,,152444.50,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2013,,,148082.50,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2014,,,145761.17,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2015,,,143808.21,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2016,,,149003.67,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2017,,,149747.33,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2018,,,158987.83,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2019,,,180936.50,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2020,,,153849.38,"Communication and services, public administration and others",Sector comercio y servicios,"Communication and services, public administration and others",Commerce and services
+2010,,,114409.00,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services
+2011,,,116807.08,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services
+2012,,,147663.17,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services
+2013,,,143732.92,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services
+2014,,,159952.33,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services
+2015,,,143111.71,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services
+2016,,,138961.25,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services
+2017,,,128800.25,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services
+2018,,,156161.42,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services
+2019,,,153950.83,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services
+2020,,,104650.63,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services
+2010,,,8751.33,"Communication and services, public administration and others",No especificado,"Communication and services, public administration and others",Not specified
+2011,,,9815.33,"Communication and services, public administration and others",No especificado,"Communication and services, public administration and others",Not specified
+2012,,,5610.00,"Communication and services, public administration and others",No especificado,"Communication and services, public administration and others",Not specified
+2013,,,4325.17,"Communication and services, public administration and others",No especificado,"Communication and services, public administration and others",Not specified
+2014,,,4504.75,"Communication and services, public administration and others",No especificado,"Communication and services, public administration and others",Not specified
+2015,,,5825.12,"Communication and services, public administration and others",No especificado,"Communication and services, public administration and others",Not specified
+2016,,,5485.42,"Communication and services, public administration and others",No especificado,"Communication and services, public administration and others",Not specified
+2017,,,10348.08,"Communication and services, public administration and others",No especificado,"Communication and services, public administration and others",Not specified
+2018,,,12416.25,"Communication and services, public administration and others",No especificado,"Communication and services, public administration and others",Not specified
+2019,,,7541.58,"Communication and services, public administration and others",No especificado,"Communication and services, public administration and others",Not specified
+2020,,,7823.50,"Communication and services, public administration and others",No especificado,"Communication and services, public administration and others",Not specified

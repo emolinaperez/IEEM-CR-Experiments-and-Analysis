@@ -1,0 +1,47 @@
+Sector,Sector_en,Sector_Calib
+arroz,Rice,"Agriculture, Livestock and fishing"
+otragr,Other agriculture,"Agriculture, Livestock and fishing"
+banano,Bannana,"Agriculture, Livestock and fishing"
+pinia,Pineaple,"Agriculture, Livestock and fishing"
+cafeenfruta,Coffee,"Agriculture, Livestock and fishing"
+for,Sivilculture,"Agriculture, Livestock and fishing"
+pesca,Fishing ,"Agriculture, Livestock and fishing"
+min,Mining,Manufacturing industry
+arrozelaborado,Rice produce,Manufacturing industry
+alimentos,Food,Manufacturing industry
+prodcafe,Coffe produce,Manufacturing industry
+bebtab,Drinks and tobbaco,Manufacturing industry
+texcuero,Textiles and leather,Manufacturing industry
+refpet,Oil refined,Manufacturing industry
+cauchoplast,Plastic and rubber,Manufacturing industry
+quimicos,Chemicals,Manufacturing industry
+prodminnomet,"Mineral products, not methalic",Manufacturing industry
+prodmet,Methalic products,Manufacturing industry
+maq,Machinery and equipment,Manufacturing industry
+vehiculos,Vehicles,Manufacturing industry
+otrmnf,Other manufactures,Manufacturing industry
+elegas,Electricity and gas,Manufacturing industry
+agua,Water,Manufacturing industry
+cns,Construction,Construction
+comercio,Commerce,"Commerce, repairs,professional and administrative activities"
+trnsferrocarril,Rail transport,Transport and storage
+trnstierrapasajeros,Land passenger transport,Transport and storage
+taxis,Transportation taxis,Transport and storage
+trnmarairecarga,Sea and air freight transport,Transport and storage
+otrtrns,Other trasport,Transport and storage
+hotelrest,Hotels and Restaurants,Hotels and restaurants
+com,Telecommunications,Transport and storage
+svcprf,Professional services,"Commerce, repairs,professional and administrative activities"
+fin,Financial Services,Finance
+edu,Education,Education and health
+salud,Health,Education and health
+otrsvc,Other Services,"Communication and services, public administration and others"
+domest,Domestic services,Home employees
+admpub,Public Administration,"Communication and services, public administration and others"
+bunker,bunker,Manufacturing industry
+diesel,diesel,Manufacturing industry
+gasolina,gasoline,Manufacturing industry
+otrprodpetroleo,others oil,Manufacturing industry
+total,total,total
+trncarga,Freight transport,Transport and storage
+trnsmarairepasajeros,Sea and air passenger transport,Transport and storage

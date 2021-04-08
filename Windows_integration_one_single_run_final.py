@@ -10,7 +10,7 @@ import sys
 
 #Parameters of this script
 ## root directory, where the model lives
-root = "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-25\\"
+root = "C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\IEEM-en-GAMS-with-EXCAP-2021-01-15"
 #root = sys.argv[1]
 ## where the dim and data files live
 nm_files_out = "user-files\\cri2016rand\\"
@@ -24,8 +24,8 @@ name_app = "cri2016rand"
 #name_app = sys.argv[4]
 
 #set current run
-#all_runs=1
-all_runs=int(sys.argv[1])
+all_runs=1
+#all_runs=int(sys.argv[1])
 
 
 #===========================================================================================

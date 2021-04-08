@@ -129,127 +129,131 @@ post_process_ieem<-function(dir.data,
 #clean space before moving into next step
  rm(list=subset(ls(),!(ls()%in%c("dir.data", "macro","meso"))))
 
+#write table
+ write.csv(meso,paste(dir.out,"meso\\","calib_report",run_id,".csv",sep=""),row.names=FALSE)
+ write.csv(macro,paste(dir.out,"macro\\","calib_report",run_id,".csv",sep=""),row.names=FALSE)
+
 #compare simulation results against real data
 
 # Include translation,
 
- snames<-read.csv(var.names.file)
-#check all sectors are in code book
- subset(unique(meso$Sector),!(unique(meso$Sector)%in%unique(snames$Sector)))
+ #snames<-read.csv(var.names.file)
+##check all sectors are in code book
+ #subset(unique(meso$Sector),!(unique(meso$Sector)%in%unique(snames$Sector)))
 
 #merge
- dim(meso)
- meso<-merge(meso,snames,by="Sector")
- dim(meso)
+ #dim(meso)
+ #meso<-merge(meso,snames,by="Sector")
+ #dim(meso)
 
 #let's first produce a table with baseline conditions
- ref<-subset(meso, Year==2019 & Scenario=='base')
- ref<-aggregate(ref[,"Employment_rv"],list(
-                                             Scenario=ref$Scenario,
-                                             Year=ref$Year,
-                                             Sector_Calib=ref$Sector_Calib
-                                             ),sum)
+ #ref<-subset(meso, Year==2019 & Scenario=='base')
+ #ref<-aggregate(ref[,"Employment_rv"],list(
+#                                             Scenario=ref$Scenario,
+#                                             Year=ref$Year,
+#                                             Sector_Calib=ref$Sector_Calib
+#                                             ),sum)
 #
- ref$Employment_rv<-ref$x
- ref$x<-NULL
+# ref$Employment_rv<-ref$x
+# ref$x<-NULL
 
 #now process real data and merge with results
-  census<-read.csv(census.data.file)
-  census$Employment_census<-census[,'Employment..people.']/1000
-  census<-subset(census,Year==2019)
-  census<-aggregate(census[,"Employment_census"],list(Sector_Calib=census$sector.en
-                                                          ),sum)
-  census$Employment_census<-census$x
-  census$x<-NULL
+#  census<-read.csv(census.data.file)
+#  census$Employment_census<-census[,'Employment..people.']/1000
+#  census<-subset(census,Year==2019)
+#  census<-aggregate(census[,"Employment_census"],list(Sector_Calib=census$sector.en
+#                                                          ),sum)
+#  census$Employment_census<-census$x
+#  census$x<-NULL
 #merge both
-  dim(ref)
-  dim(census)
-  ref<-merge(ref,census,by='Sector_Calib',all.x=TRUE)
-  dim(ref)
+#  dim(ref)
+#  dim(census)
+#  ref<-merge(ref,census,by='Sector_Calib',all.x=TRUE)
+#  dim(ref)
 
 #now process the actual data
 #aggregate employment per sector Calib
- meso<-aggregate(meso[,"Employment_rv"],list(
-                                             Scenario=meso$Scenario,
-                                             Year=meso$Year,
-                                             Sector_Calib=meso$Sector_Calib
-                                             ),sum)
-meso$Employment_rv<-meso$x
-meso$x<-NULL
+# meso<-aggregate(meso[,"Employment_rv"],list(
+#                                             Scenario=meso$Scenario,
+#                                             Year=meso$Year,
+#                                             Sector_Calib=meso$Sector_Calib
+#                                             ),sum)
+#meso$Employment_rv<-meso$x
+#meso$x<-NULL
 
 #now create variable to compare against base
-  meso.b<-subset(meso,Scenario=='base')
-  meso.b$index<-paste0(meso.b$Sector_Calib,'_',meso.b$Year)
-  meso.b<-meso.b[,c('index','Employment_rv')]
-  colnames(meso.b)<-c('index','Employment_rv-B')
+#  meso.b<-subset(meso,Scenario=='base')
+#  meso.b$index<-paste0(meso.b$Sector_Calib,'_',meso.b$Year)
+#  meso.b<-meso.b[,c('index','Employment_rv')]
+#  colnames(meso.b)<-c('index','Employment_rv-B')
 #create index in meso
-  meso$index<-paste0(meso$Sector_Calib,'_',meso$Year)
-  dim(meso)
-  dim(meso.b)
-  meso<-merge(meso,meso.b,by="index",all.x=TRUE)
-  dim(meso)
-  meso$index<-NULL
+#  meso$index<-paste0(meso$Sector_Calib,'_',meso$Year)
+#  dim(meso)
+#  dim(meso.b)
+#  meso<-merge(meso,meso.b,by="index",all.x=TRUE)
+#  dim(meso)
+#  meso$index<-NULL
 
 #just focus in 2020
-  meso<-subset(meso,Year==2020)
-  meso$Employment_rv_Diff<-meso[,'Employment_rv']-meso[,'Employment_rv-B']
-  meso$Employment_rv_PctDiff<-(meso[,'Employment_rv']-meso[,'Employment_rv-B'])/meso[,'Employment_rv-B']
+#  meso<-subset(meso,Year==2020)
+#  meso$Employment_rv_Diff<-meso[,'Employment_rv']-meso[,'Employment_rv-B']
+#  meso$Employment_rv_PctDiff<-(meso[,'Employment_rv']-meso[,'Employment_rv-B'])/meso[,'Employment_rv-B']
 
 
 #i want to merge GDP decline
-  macro<-macro[,c('Scenario','Year','GDPFC')]
-  macro.b<-subset(macro,Scenario=='base')
-  macro.b<-macro.b[,c('Year','GDPFC')]
-  colnames(macro.b)<-c('Year','GDPFC-B')
-  dim(macro)
-  dim(macro.b)
-  macro<-merge(macro,macro.b,by="Year",all.x=TRUE)
-  dim(macro)
+#  macro<-macro[,c('Scenario','Year','GDPFC')]
+#  macro.b<-subset(macro,Scenario=='base')
+#  macro.b<-macro.b[,c('Year','GDPFC')]
+#  colnames(macro.b)<-c('Year','GDPFC-B')
+#  dim(macro)
+#  dim(macro.b)
+#  macro<-merge(macro,macro.b,by="Year",all.x=TRUE)
+#  dim(macro)
 
 #just focus in 2020
-    macro<-subset(macro,Year==2020)
-    macro$GDPFC_Diff<-macro[,'GDPFC']-macro[,'GDPFC-B']
-    macro$GDPFC_PctDiff<-(macro[,'GDPFC']-macro[,'GDPFC-B'])/macro[,'GDPFC-B']
+#    macro<-subset(macro,Year==2020)
+#    macro$GDPFC_Diff<-macro[,'GDPFC']-macro[,'GDPFC-B']
+#    macro$GDPFC_PctDiff<-(macro[,'GDPFC']-macro[,'GDPFC-B'])/macro[,'GDPFC-B']
 
 #merge
-  dim(meso)
-  dim(macro)
-  meso<-merge(meso,macro[,c('Scenario','GDPFC_Diff','GDPFC_PctDiff')],by='Scenario',all.x=TRUE)
-  dim(meso)
+#  dim(meso)
+#  dim(macro)
+#  meso<-merge(meso,macro[,c('Scenario','GDPFC_Diff','GDPFC_PctDiff')],by='Scenario',all.x=TRUE)
+#  dim(meso)
 
 
 #merge this report with employment decline in census
-  census<-read.csv(paste(census.data.file,sep=""))
-  census$Employment_census<-census[,'Employment..people.']/1000
-  census<-subset(census,Year%in%c(2019,2020))
-  census<-aggregate(census[,"Employment_census"],list(Sector_Calib=census$sector.en,
-                                                      Year=census$Year
-                                                        ),sum)
-census$Employment_census<-census$x
-census$x<-NULL
+#  census<-read.csv(paste(census.data.file,sep=""))
+#  census$Employment_census<-census[,'Employment..people.']/1000
+#  census<-subset(census,Year%in%c(2019,2020))
+#  census<-aggregate(census[,"Employment_census"],list(Sector_Calib=census$sector.en,
+#                                                      Year=census$Year
+#                                                        ),sum)
+#census$Employment_census<-census$x
+#census$x<-NULL
 
-census.b<-subset(census,Year==2019)
-census.b$Year<-NULL
-colnames(census.b)<-c('Sector_Calib','Employment_census2019')
-census<-subset(census,Year==2020)
-census$Year<-NULL
+#census.b<-subset(census,Year==2019)
+#census.b$Year<-NULL
+#colnames(census.b)<-c('Sector_Calib','Employment_census2019')
+#census<-subset(census,Year==2020)
+#census$Year<-NULL
 
 #merge both
- dim(census)
- dim(census.b)
- census<-merge(census,census.b,by='Sector_Calib')
- dim(census)
+# dim(census)
+# dim(census.b)
+# census<-merge(census,census.b,by='Sector_Calib')
+# dim(census)
 
 #calculate differences
- census$CensusEmployment_rv_Diff<-census$Employment_census-census$Employment_census2019
- census$CensusEmployment_rv_PctDiff<-(census$Employment_census-census$Employment_census2019)/census$Employment_census2019
+# census$CensusEmployment_rv_Diff<-census$Employment_census-census$Employment_census2019
+# census$CensusEmployment_rv_PctDiff<-(census$Employment_census-census$Employment_census2019)/census$Employment_census2019
 
 #merge all
- dim(meso)
- dim(census)
- meso<-merge(meso,census[,c('Sector_Calib','CensusEmployment_rv_Diff','CensusEmployment_rv_PctDiff')],by='Sector_Calib',all.x=TRUE)
- dim(meso)
+# dim(meso)
+# dim(census)
+# meso<-merge(meso,census[,c('Sector_Calib','CensusEmployment_rv_Diff','CensusEmployment_rv_PctDiff')],by='Sector_Calib',all.x=TRUE)
+# dim(meso)
 
 #write table
- write.csv(meso,paste(dir.out,"calib_report",run_id,".csv",sep=""),row.names=FALSE)
+# write.csv(meso,paste(dir.out,"calib_report",run_id,".csv",sep=""),row.names=FALSE)
  }
