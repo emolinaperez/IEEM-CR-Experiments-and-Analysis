@@ -6,7 +6,7 @@
 #in pc
 #  root.all<-"C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\"
 #  gams.postprocess.version<-"C:\\GAMS\\win64\\28.2\\"
-  py.script.name<- "IEEM-CR-Experiments-and-Analysis\\Windows_integration_one_single_run.py"
+#  py.script.name<- "IEEM-CR-Experiments-and-Analysis\\Windows_integration_one_single_run.py"
 #in server
   root.all<-"D:\\1. Projects\\30. Costa Rica COVID19\\"
   gams.postprocess.version<-"C:\\GAMS\\win64\\27.3\\"
@@ -22,15 +22,18 @@
   out.folder<-"calib_results\\"
   var.names.file.dir<-"IEEM-CR-Experiments-and-Analysis\\Vars_Code_v2.csv"
   census.data.file.dir<-"IEEM-CR-Experiments-and-Analysis\\econ_indicators-annual_2010-2020_new.csv"
+  invest.name<-"invest_shocks_2021_04_20.csv"
   #ed.name<-"exp_design_test.csv"
-  ed.name<-"exp_design_2021_04_14.csv"
+  ed.name<-"exp_design_2021_04_20_invest.csv"
 
 #load experimental design
   ExpDesign<-read.csv(paste(root.all,ieem.folder,nm_files_out,ed.name,sep=""))
+  ScenTable<-read.csv(paste(root.all,ieem.folder,nm_files_out,invest.name,sep=""))
 #source post processing script
   source(paste0(root.all,post.process.script))
 
-for (i in 1:nrow(ExpDesign)){
+for (i in 268:nrow(ExpDesign)){
+ #i<-9
  run_id<-i
 #create the data and sim excel files
  options(java.parameters = "-Xmx8000m")
@@ -42,7 +45,7 @@ for (i in 1:nrow(ExpDesign)){
             }
 
 # Create sim file
- file.sim<-"cri2016rand-sim"
+ file.sim<-"invest_cri2016rand-sim"
  SimFile<-loadWorkbook(paste0(root.all,ieem.folder,nm_files_out,file.sim,".xlsx"))
  sheet<-getSheets(SimFile)$shklprd
  cb1 <- CellBlock(sheet, 2, 2, 39, 1, create = FALSE)
@@ -51,10 +54,35 @@ for (i in 1:nrow(ExpDesign)){
 #
  CB.setColData(cb1, newlaborshocks, 1)
  CB.setColData(cb2, newlaborshocks, 1)
+
+#next read the invest scenarios table and select the corresponding scenario
+ invest_scenario.table<-subset(ScenTable,investment.shock==ExpDesign[run_id,"investment.shock"])
+ invest_scenario.table<-as.matrix(invest_scenario.table[,paste0("X",c(2016:2025))])
+ colnames(invest_scenario.table)<-NULL
+ rownames(invest_scenario.table)<-NULL
+ InvestSheet<-getSheets(SimFile)$dqksim
+ cb3 <- CellBlock(InvestSheet, 4, 4, 29, 10, create = FALSE)
+ CB.setMatrixData(cb3,invest_scenario.table, 1, 1)
+
+#next change the values for the investment shock
+ oneyr<-c(0,0,0,0,1,0,0,0,0,0,0,0,0,0,0)
+ threeyr<-c(0,0,0,0,1,0.666666667,0.333333333,0,0,0,0,0,0,0,0)
+ fiveyr<-c(0,0,0,0,1,0.8,0.6,0.4,0.2,0,0,0,0,0,0)
+
+ shocks<-list(c(0,0,0,0,1,0,0,0,0,0,0,0,0,0,0),c(0,0,0,0,1,0.666666667,0.333333333,0,0,0,0,0,0,0,0),c(0,0,0,0,1,0.8,0.6,0.4,0.2,0,0,0,0,0,0))
+ names(shocks)<-c("1-year","3-year","5-year")
+
+ ShockSheet<-getSheets(SimFile)$rec135yr
+ cb4 <- CellBlock(ShockSheet, 11, 2, 1, 15, create = FALSE)
+ shockyr<-as.numeric(shocks[[ExpDesign[run_id,"covid.shock"]]])
+ CB.setMatrixData(cb4,matrix(shockyr,1,15), 1, 1)
+
+#write new sim file
+ file.sim<-gsub("invest_","",file.sim)
  saveWorkbook(SimFile,paste0(root.all,ieem.folder,nm_files_out,file.sim,"_s",run_id,".xlsx"))
 
 #Create data file
- file.data<-"cri2016rand-data"
+ file.data<-"invest_cri2016rand-data"
  DataFile<-loadWorkbook(paste0(root.all,ieem.folder,nm_files_out,file.data,".xlsx"))
  sheet1<-getSheets(DataFile)$unemp
  cb1 <- CellBlock(sheet1, 3, 3, 3, 1, create = FALSE)
@@ -64,6 +92,7 @@ for (i in 1:nrow(ExpDesign)){
  cb2 <- CellBlock(sheet2, 3, 4, 39, 1, create = FALSE)
  newexcaps<-as.numeric(ExpDesign[run_id,40:78])
  CB.setColData(cb2,  newexcaps, 1)
+ file.data<-gsub("invest_","",file.data)
  saveWorkbook(DataFile, paste0(root.all,ieem.folder,nm_files_out,file.data,"_d",run_id,".xlsx"))
 
 #execute java garbage collection

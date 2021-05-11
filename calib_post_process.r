@@ -112,6 +112,22 @@
 census$Employment_census<-census$x
 census$x<-NULL
 
+#add total- home employees here
+ census.dummy<-data.frame(Sector_Calib='total minus households',
+                          Year=c(2019,2020),
+                          Employment_census=c(
+                                              subset(census,Sector_Calib=='total' & Year==2019)$Employment_census-subset(census,Sector_Calib=='Home employees' & Year==2019)$Employment_census,
+                                              subset(census,Sector_Calib=='total' & Year==2020)$Employment_census-subset(census,Sector_Calib=='Home employees' & Year==2020)$Employment_census
+                                              )
+                         )
+#rbind
+ census<-rbind(census,census.dummy)
+
+#create actual value reference
+ census.ref<-reshape2::dcast(census,Sector_Calib ~ Year, value.var = "Employment_census" )
+ colnames(census.ref)<-c("Sector_Calib","Employment_2019","Employment_2020")
+
+#create comparison base
 census.b<-subset(census,Year==2019)
 census.b$Year<-NULL
 colnames(census.b)<-c('Sector_Calib','Employment_census2019')
@@ -174,6 +190,23 @@ census.va$x<-NULL
 
 #rbind
  census.va<-rbind(census.va,he.va)
+
+#add total- home employees here
+ census.va.dummy<-data.frame(Sector_Calib='total minus households',
+                          Year=c(2019,2020),
+                          ValueAdded_census=c(
+                                              subset(census.va,Sector_Calib=='total' & Year==2019)$ValueAdded_census-subset(census.va,Sector_Calib=='Home employees' & Year==2019)$ValueAdded_census,
+                                              subset(census.va,Sector_Calib=='total' & Year==2020)$ValueAdded_census-subset(census.va,Sector_Calib=='Home employees' & Year==2020)$ValueAdded_census
+                                              )
+                         )
+#rbind
+ census.va<-rbind(census.va,census.va.dummy)
+
+#create actual value reference
+ census.va.ref<-reshape2::dcast(census.va,Sector_Calib ~ Year, value.var = "ValueAdded_census" )
+ colnames(census.va.ref)<-c("Sector_Calib","VA_2019","VA_2020")
+
+
 
 #continue with the process
 census.va.b<-subset(census.va,Year==2019)

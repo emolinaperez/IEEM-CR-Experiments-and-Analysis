@@ -1,0 +1,47 @@
+Sector,Sector_en,Sector_Calib,m,f,wtype
+arroz,Rice,"Agriculture, Livestock and fishing",0.87,0.13,lw
+otragr,Other agriculture,"Agriculture, Livestock and fishing",0.87,0.13,lw
+banano,Bannana,"Agriculture, Livestock and fishing",0.87,0.13,lw
+pinia,Pineaple,"Agriculture, Livestock and fishing",0.87,0.13,lw
+cafeenfruta,Coffee,"Agriculture, Livestock and fishing",0.87,0.13,lw
+for,Sivilculture,"Agriculture, Livestock and fishing",0.87,0.13,lw
+pesca,Fishing ,"Agriculture, Livestock and fishing",0.87,0.13,lw
+min,Mining,Manufacturing industry,0.68,0.32,hw
+arrozelaborado,Rice produce,Manufacturing industry,0.68,0.32,hw
+alimentos,Food,Manufacturing industry,0.68,0.32,lw
+prodcafe,Coffe produce,Manufacturing industry,0.68,0.32,hw
+bebtab,Drinks and tobbaco,Manufacturing industry,0.68,0.32,lw
+texcuero,Textiles and leather,Manufacturing industry,0.68,0.32,lw
+refpet,Oil refined,Manufacturing industry,0.68,0.32,hw
+cauchoplast,Plastic and rubber,Manufacturing industry,0.68,0.32,lw
+quimicos,Chemicals,Manufacturing industry,0.68,0.32,hw
+prodminnomet,"Mineral products, not methalic",Manufacturing industry,0.68,0.32,hw
+prodmet,Methalic products,Manufacturing industry,0.68,0.32,lw
+maq,Machinery and equipment,Manufacturing industry,0.68,0.32,hw
+vehiculos,Vehicles,Manufacturing industry,0.68,0.32,lw
+otrmnf,Other manufactures,Manufacturing industry,0.68,0.32,lw
+elegas,Electricity and gas,Manufacturing industry,0.68,0.32,hw
+agua,Water,Manufacturing industry,0.68,0.32,lw
+cns,Construction,Construction,0.95,0.05,lw
+comercio,Commerce,"Commerce, repairs,professional and administrative activities",0.63,0.37,lw
+trnsferrocarril,Rail transport,Transport and storage,0.88,0.12,lw
+trnstierrapasajeros,Land passenger transport,Transport and storage,0.88,0.12,lw
+taxis,Transportation taxis,Transport and storage,0.88,0.12,lw
+trnmarairecarga,Sea and air freight transport,Transport and storage,0.88,0.12,lw
+otrtrns,Other trasport,Transport and storage,0.88,0.12,lw
+hotelrest,Hotels and Restaurants,Hotels and restaurants,0.39,0.61,lw
+com,Telecommunications,Transport and storage,0.88,0.12,hw
+svcprf,Professional services,"Commerce, repairs,professional and administrative activities",0.63,0.37,lw
+fin,Financial Services,Finance,0.49,0.51,lw
+edu,Education,Education and health,0.38,0.62,lw
+salud,Health,Education and health,0.38,0.62,lw
+otrsvc,Other Services,"Communication and services, public administration and others",0.68,0.32,hw
+domest,Domestic services,Home employees,0.1,0.9,lw
+admpub,Public Administration,"Communication and services, public administration and others",0.68,0.32,lw
+bunker,bunker,Manufacturing industry,0.68,0.32,hw
+diesel,diesel,Manufacturing industry,0.68,0.32,hw
+gasolina,gasoline,Manufacturing industry,0.68,0.32,hw
+otrprodpetroleo,others oil,Manufacturing industry,0.68,0.32,lw
+total,total,total,0.5,0.5,NA
+trncarga,Freight transport,Transport and storage,0.88,0.12,hw
+trnsmarairepasajeros,Sea and air passenger transport,Transport and storage,0.88,0.12,hw
