@@ -22,9 +22,9 @@
   out.folder<-"calib_results\\"
   var.names.file.dir<-"IEEM-CR-Experiments-and-Analysis\\Vars_Code_v2.csv"
   census.data.file.dir<-"IEEM-CR-Experiments-and-Analysis\\econ_indicators-annual_2010-2020_new.csv"
-  invest.name<-"invest_shocks_2021_04_20.csv"
+  invest.name<- "invest_shocks_2021_06_18.csv" #"invest_shocks_2021_04_08.csv" #"invest_shocks_2021_05_09.csv" #invest_shocks_2021_04_08.csv
   #ed.name<-"exp_design_test.csv"
-  ed.name<-"exp_design_2021_04_20_invest.csv"
+  ed.name<-"exp_design_2021_06_18_invest_hm.csv" #"exp_design_2021_05_09_invest.csv"
 
 #load experimental design
   ExpDesign<-read.csv(paste(root.all,ieem.folder,nm_files_out,ed.name,sep=""))
@@ -32,8 +32,9 @@
 #source post processing script
   source(paste0(root.all,post.process.script))
 
-for (i in 268:nrow(ExpDesign)){
- #i<-9
+for (i in 1:nrow(ExpDesign)){
+#for (i in 73:81){
+ #i<-1
  run_id<-i
 #create the data and sim excel files
  options(java.parameters = "-Xmx8000m")

@@ -1,0 +1,309 @@
+Year,Employment [people],sector,class,sector-en,class-en,Gender,Sector_Calib
+2010,182599,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,male,"Agriculture, Livestock and fishing"
+2011,177176.8333,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,male,"Agriculture, Livestock and fishing"
+2012,181554.8333,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,male,"Agriculture, Livestock and fishing"
+2013,177018.6667,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,male,"Agriculture, Livestock and fishing"
+2014,204268.4167,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,male,"Agriculture, Livestock and fishing"
+2015,191067.7273,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,male,"Agriculture, Livestock and fishing"
+2016,212926.0833,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,male,"Agriculture, Livestock and fishing"
+2017,223074.75,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,male,"Agriculture, Livestock and fishing"
+2018,227084.6667,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,male,"Agriculture, Livestock and fishing"
+2019,225744.6667,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,male,"Agriculture, Livestock and fishing"
+2020,211511.625,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,male,"Agriculture, Livestock and fishing"
+2010,132091.5,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,male,Manufacturing industry
+2011,142297.25,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,male,Manufacturing industry
+2012,133281.1667,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,male,Manufacturing industry
+2013,124832.5833,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,male,Manufacturing industry
+2014,132823.5,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,male,Manufacturing industry
+2015,137632.3333,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,male,Manufacturing industry
+2016,144720.75,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,male,Manufacturing industry
+2017,143196.25,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,male,Manufacturing industry
+2018,154871.3333,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,male,Manufacturing industry
+2019,154250.6667,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,male,Manufacturing industry
+2020,138239.125,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,male,Manufacturing industry
+2010,102516.8333,Construcción,Sector secundario,Construction,Secondary sector,male,Construction
+2011,107079.8333,Construcción,Sector secundario,Construction,Secondary sector,male,Construction
+2012,119822.8333,Construcción,Sector secundario,Construction,Secondary sector,male,Construction
+2013,110910,Construcción,Sector secundario,Construction,Secondary sector,male,Construction
+2014,131659.3333,Construcción,Sector secundario,Construction,Secondary sector,male,Construction
+2015,118418.3333,Construcción,Sector secundario,Construction,Secondary sector,male,Construction
+2016,124749.1667,Construcción,Sector secundario,Construction,Secondary sector,male,Construction
+2017,129288.3333,Construcción,Sector secundario,Construction,Secondary sector,male,Construction
+2018,145412.4167,Construcción,Sector secundario,Construction,Secondary sector,male,Construction
+2019,143461,Construcción,Sector secundario,Construction,Secondary sector,male,Construction
+2020,120124.125,Construcción,Sector secundario,Construction,Secondary sector,male,Construction
+2010,38744.66667,Otros,Sector secundario,Others,Secondary sector,male,"Communication and services, public administration and others"
+2011,33304.33333,Otros,Sector secundario,Others,Secondary sector,male,"Communication and services, public administration and others"
+2012,34113.08333,Otros,Sector secundario,Others,Secondary sector,male,"Communication and services, public administration and others"
+2013,34362.83333,Otros,Sector secundario,Others,Secondary sector,male,"Communication and services, public administration and others"
+2014,29462.41667,Otros,Sector secundario,Others,Secondary sector,male,"Communication and services, public administration and others"
+2015,32725.25758,Otros,Sector secundario,Others,Secondary sector,male,"Communication and services, public administration and others"
+2016,33000.75,Otros,Sector secundario,Others,Secondary sector,male,"Communication and services, public administration and others"
+2017,27180.66667,Otros,Sector secundario,Others,Secondary sector,male,"Communication and services, public administration and others"
+2018,26295.16667,Otros,Sector secundario,Others,Secondary sector,male,"Communication and services, public administration and others"
+2019,22821.25,Otros,Sector secundario,Others,Secondary sector,male,"Communication and services, public administration and others"
+2020,25048.5,Otros,Sector secundario,Others,Secondary sector,male,"Communication and services, public administration and others"
+2010,251379,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2011,244869,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2012,232532.6667,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2013,257601.4167,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2014,246877.4167,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2015,243102.0909,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2016,232607.3333,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2017,234846.75,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2018,229097.1667,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2019,212223.1667,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2020,194287.25,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2010,86558.66667,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,male,Transport and storage
+2011,79094.58333,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,male,Transport and storage
+2012,97870.25,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,male,Transport and storage
+2013,104363.1667,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,male,Transport and storage
+2014,88400.5,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,male,Transport and storage
+2015,88970.59091,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,male,Transport and storage
+2016,91955.91667,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,male,Transport and storage
+2017,90124.58333,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,male,Transport and storage
+2018,105630.3333,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,male,Transport and storage
+2019,105215.8333,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,male,Transport and storage
+2020,89085.5,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,male,Transport and storage
+2010,46179.66667,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,male,Hotels and restaurants
+2011,46349.5,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,male,Hotels and restaurants
+2012,51158.5,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,male,Hotels and restaurants
+2013,51689.41667,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,male,Hotels and restaurants
+2014,49746.33333,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,male,Hotels and restaurants
+2015,50052.39394,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,male,Hotels and restaurants
+2016,53542.33333,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,male,Hotels and restaurants
+2017,57487.58333,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,male,Hotels and restaurants
+2018,55288.58333,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,male,Hotels and restaurants
+2019,54376.25,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,male,Hotels and restaurants
+2020,41394.25,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,male,Hotels and restaurants
+2010,21872.5,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,male,Finance
+2011,27387.41667,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,male,Finance
+2012,23286.58333,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,male,Finance
+2013,31250.66667,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,male,Finance
+2014,29501.33333,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,male,Finance
+2015,27393.37879,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,male,Finance
+2016,26168.5,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,male,Finance
+2017,23315.33333,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,male,Finance
+2018,30430.16667,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,male,Finance
+2019,23130.75,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,male,Finance
+2020,20659.375,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,male,Finance
+2010,86514.33333,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2011,91242.08333,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2012,101965.25,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2013,104751.9167,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2014,119758,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2015,104792.9848,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2016,110377.3333,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2017,122967.5,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2018,123300.5833,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2019,125311.8333,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2020,113569.875,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,male,"Commerce, repairs,professional and administrative activities"
+2010,68785.83333,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,male,"Communication and services, public administration and others"
+2011,62403.58333,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,male,"Communication and services, public administration and others"
+2012,59841.75,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,male,"Communication and services, public administration and others"
+2013,58476.25,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,male,"Communication and services, public administration and others"
+2014,55005.66667,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,male,"Communication and services, public administration and others"
+2015,59227.60606,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,male,"Communication and services, public administration and others"
+2016,52724.58333,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,male,"Communication and services, public administration and others"
+2017,59143.91667,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,male,"Communication and services, public administration and others"
+2018,51974.58333,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,male,"Communication and services, public administration and others"
+2019,58471.5,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,male,"Communication and services, public administration and others"
+2020,51510.625,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,male,"Communication and services, public administration and others"
+2010,67659.33333,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,male,Education and health
+2011,62965.33333,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,male,Education and health
+2012,72639.91667,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,male,Education and health
+2013,81318.08333,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,male,Education and health
+2014,78212,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,male,Education and health
+2015,72359.37879,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,male,Education and health
+2016,71179.83333,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,male,Education and health
+2017,79635.16667,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,male,Education and health
+2018,73933.41667,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,male,Education and health
+2019,87546.58333,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,male,Education and health
+2020,81420.875,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,male,Education and health
+2010,83808.83333,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,male,"Communication and services, public administration and others"
+2011,74564.08333,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,male,"Communication and services, public administration and others"
+2012,93878.75,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,male,"Communication and services, public administration and others"
+2013,85767.5,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,male,"Communication and services, public administration and others"
+2014,85628.5,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,male,"Communication and services, public administration and others"
+2015,85517.16667,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,male,"Communication and services, public administration and others"
+2016,93555.91667,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,male,"Communication and services, public administration and others"
+2017,80997.66667,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,male,"Communication and services, public administration and others"
+2018,86255.33333,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,male,"Communication and services, public administration and others"
+2019,105733.6667,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,male,"Communication and services, public administration and others"
+2020,98040.5,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,male,"Communication and services, public administration and others"
+2010,12044.66667,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,male,Home employees
+2011,18502.83333,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,male,Home employees
+2012,22213.5,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,male,Home employees
+2013,22410.16667,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,male,Home employees
+2014,25027.16667,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,male,Home employees
+2015,21010.25758,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,male,Home employees
+2016,16240.5,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,male,Home employees
+2017,18036.66667,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,male,Home employees
+2018,17988.25,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,male,Home employees
+2019,16132.41667,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,male,Home employees
+2020,11939.5,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,male,Home employees
+2010,5477.666667,No especificado,No especificado,Not specified,Not specified,male,"Communication and services, public administration and others"
+2011,6830.416667,No especificado,No especificado,Not specified,Not specified,male,"Communication and services, public administration and others"
+2012,3608.583333,No especificado,No especificado,Not specified,Not specified,male,"Communication and services, public administration and others"
+2013,3337.75,No especificado,No especificado,Not specified,Not specified,male,"Communication and services, public administration and others"
+2014,1898.416667,No especificado,No especificado,Not specified,Not specified,male,"Communication and services, public administration and others"
+2015,3649.742424,No especificado,No especificado,Not specified,Not specified,male,"Communication and services, public administration and others"
+2016,3396.166667,No especificado,No especificado,Not specified,Not specified,male,"Communication and services, public administration and others"
+2017,6813.5,No especificado,No especificado,Not specified,Not specified,male,"Communication and services, public administration and others"
+2018,6537.416667,No especificado,No especificado,Not specified,Not specified,male,"Communication and services, public administration and others"
+2019,5177.166667,No especificado,No especificado,Not specified,Not specified,male,"Communication and services, public administration and others"
+2020,6203.25,No especificado,No especificado,Not specified,Not specified,male,"Communication and services, public administration and others"
+2010,24415.83333,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,female,"Agriculture, Livestock and fishing"
+2011,22901.66667,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,female,"Agriculture, Livestock and fishing"
+2012,21232.75,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,female,"Agriculture, Livestock and fishing"
+2013,23392,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,female,"Agriculture, Livestock and fishing"
+2014,30888.33333,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,female,"Agriculture, Livestock and fishing"
+2015,26195.57576,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,female,"Agriculture, Livestock and fishing"
+2016,29642.41667,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,female,"Agriculture, Livestock and fishing"
+2017,32888.58333,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,female,"Agriculture, Livestock and fishing"
+2018,35144.66667,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,female,"Agriculture, Livestock and fishing"
+2019,34189.75,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,female,"Agriculture, Livestock and fishing"
+2020,30908.75,"Agricultura, ganadería y pesca",Sector primario,"Agriculture, Livestock and fishing",Primary sector,female,"Agriculture, Livestock and fishing"
+2010,71227.66667,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,female,Manufacturing industry
+2011,58684.16667,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,female,Manufacturing industry
+2012,61597.41667,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,female,Manufacturing industry
+2013,56476.83333,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,female,Manufacturing industry
+2014,62611.5,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,female,Manufacturing industry
+2015,61669.57576,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,female,Manufacturing industry
+2016,59051.25,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,female,Manufacturing industry
+2017,62689.66667,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,female,Manufacturing industry
+2018,77120.75,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,female,Manufacturing industry
+2019,71448,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,female,Manufacturing industry
+2020,60392.75,Industria manufacturera,Sector secundario,Manufacturing industry,Secondary sector,female,Manufacturing industry
+2010,2552.333333,Construcción,Sector secundario,Construction,Secondary sector,female,Construction
+2011,4739.75,Construcción,Sector secundario,Construction,Secondary sector,female,Construction
+2012,3918,Construcción,Sector secundario,Construction,Secondary sector,female,Construction
+2013,2011.666667,Construcción,Sector secundario,Construction,Secondary sector,female,Construction
+2014,6624.75,Construcción,Sector secundario,Construction,Secondary sector,female,Construction
+2015,4194.393939,Construcción,Sector secundario,Construction,Secondary sector,female,Construction
+2016,3427.75,Construcción,Sector secundario,Construction,Secondary sector,female,Construction
+2017,2891.5,Construcción,Sector secundario,Construction,Secondary sector,female,Construction
+2018,3394.833333,Construcción,Sector secundario,Construction,Secondary sector,female,Construction
+2019,6826.833333,Construcción,Sector secundario,Construction,Secondary sector,female,Construction
+2020,4299.875,Construcción,Sector secundario,Construction,Secondary sector,female,Construction
+2010,5791.166667,Otros,Sector secundario,Others,Secondary sector,female,"Communication and services, public administration and others"
+2011,4985,Otros,Sector secundario,Others,Secondary sector,female,"Communication and services, public administration and others"
+2012,4928.666667,Otros,Sector secundario,Others,Secondary sector,female,"Communication and services, public administration and others"
+2013,5385,Otros,Sector secundario,Others,Secondary sector,female,"Communication and services, public administration and others"
+2014,6711.166667,Otros,Sector secundario,Others,Secondary sector,female,"Communication and services, public administration and others"
+2015,5244.151515,Otros,Sector secundario,Others,Secondary sector,female,"Communication and services, public administration and others"
+2016,4740.333333,Otros,Sector secundario,Others,Secondary sector,female,"Communication and services, public administration and others"
+2017,4608.583333,Otros,Sector secundario,Others,Secondary sector,female,"Communication and services, public administration and others"
+2018,3786.583333,Otros,Sector secundario,Others,Secondary sector,female,"Communication and services, public administration and others"
+2019,4454.833333,Otros,Sector secundario,Others,Secondary sector,female,"Communication and services, public administration and others"
+2020,3337,Otros,Sector secundario,Others,Secondary sector,female,"Communication and services, public administration and others"
+2010,139807.8333,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2011,134994.9167,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2012,166631.3333,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2013,170564.9167,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2014,153652.5833,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2015,152633.2273,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2016,141827.4167,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2017,140505.4167,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2018,138673.3333,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2019,138155.9167,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2020,107483.875,Comercio y reparación,Sector comercio y servicios,Commerce and repairs,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2010,9945.833333,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,female,Transport and storage
+2011,7524.75,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,female,Transport and storage
+2012,10219.08333,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,female,Transport and storage
+2013,15982.08333,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,female,Transport and storage
+2014,12479.91667,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,female,Transport and storage
+2015,10869.16667,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,female,Transport and storage
+2016,9922.416667,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,female,Transport and storage
+2017,10260.25,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,female,Transport and storage
+2018,13308,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,female,Transport and storage
+2019,14065.58333,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,female,Transport and storage
+2020,11283.375,Transporte y almacenamiento,Sector comercio y servicios,Transport and storage,Commerce and services,female,Transport and storage
+2010,52313.16667,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,female,Hotels and restaurants
+2011,52414.08333,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,female,Hotels and restaurants
+2012,53779.58333,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,female,Hotels and restaurants
+2013,66582.5,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,female,Hotels and restaurants
+2014,69575.08333,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,female,Hotels and restaurants
+2015,62123.42424,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,female,Hotels and restaurants
+2016,67649.5,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,female,Hotels and restaurants
+2017,73412.33333,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,female,Hotels and restaurants
+2018,78504.83333,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,female,Hotels and restaurants
+2019,86803.08333,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,female,Hotels and restaurants
+2020,64580.25,Hoteles y restaurantes,Sector comercio y servicios,Hotels and restaurants,Commerce and services,female,Hotels and restaurants
+2010,24252,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,female,Finance
+2011,21367.66667,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,female,Finance
+2012,22787.75,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,female,Finance
+2013,19550.5,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,female,Finance
+2014,20623.25,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,female,Finance
+2015,20780.31818,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,female,Finance
+2016,20349.08333,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,female,Finance
+2017,17690.08333,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,female,Finance
+2018,19462.58333,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,female,Finance
+2019,23995.75,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,female,Finance
+2020,20668.125,Intermediación financiera y de seguros,Sector comercio y servicios,Finance,Commerce and services,female,Finance
+2010,41888.33333,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2011,39442.75,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2012,51508.66667,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2013,53763.16667,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2014,55033.33333,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2015,50111.57576,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2016,55994.91667,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2017,52507.83333,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2018,59694.66667,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2019,66117,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2020,63684.5,Actividades profesionales y administrativas de apoyo,Sector comercio y servicios,Professional and administrative activities,Commerce and services,female,"Commerce, repairs,professional and administrative activities"
+2010,39973.66667,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,female,"Communication and services, public administration and others"
+2011,39430.83333,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,female,"Communication and services, public administration and others"
+2012,37975.16667,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,female,"Communication and services, public administration and others"
+2013,37465.16667,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,female,"Communication and services, public administration and others"
+2014,31999.41667,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,female,"Communication and services, public administration and others"
+2015,36871.01515,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,female,"Communication and services, public administration and others"
+2016,28216.16667,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,female,"Communication and services, public administration and others"
+2017,27382.5,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,female,"Communication and services, public administration and others"
+2018,27277.33333,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,female,"Communication and services, public administration and others"
+2019,37132.41667,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,female,"Communication and services, public administration and others"
+2020,33150.25,Administración pública,Sector comercio y servicios,Public Administration,Commerce and services,female,"Communication and services, public administration and others"
+2010,120322.1667,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,female,Education and health
+2011,131613.8333,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,female,Education and health
+2012,142348.1667,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,female,Education and health
+2013,149545.75,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,female,Education and health
+2014,133688.3333,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,female,Education and health
+2015,135787.4545,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,female,Education and health
+2016,133253.1667,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,female,Education and health
+2017,136632.25,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,female,Education and health
+2018,130043.0833,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,female,Education and health
+2019,143646.75,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,female,Education and health
+2020,142781.375,Enseñanza y salud,Sector comercio y servicios,Education and health,Commerce and services,female,Education and health
+2010,46497.16667,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,female,"Communication and services, public administration and others"
+2011,50265.83333,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,female,"Communication and services, public administration and others"
+2012,58565.75,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,female,"Communication and services, public administration and others"
+2013,62315,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,female,"Communication and services, public administration and others"
+2014,60132.66667,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,female,"Communication and services, public administration and others"
+2015,58291.04545,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,female,"Communication and services, public administration and others"
+2016,55447.75,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,female,"Communication and services, public administration and others"
+2017,68749.66667,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,female,"Communication and services, public administration and others"
+2018,72732.5,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,female,"Communication and services, public administration and others"
+2019,75202.83333,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,female,"Communication and services, public administration and others"
+2020,55808.875,Comunicación y otros servicios,Sector comercio y servicios,Communication and services,Commerce and services,female,"Communication and services, public administration and others"
+2010,102364.3333,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,female,Home employees
+2011,98304.25,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,female,Home employees
+2012,125449.6667,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,female,Home employees
+2013,121322.75,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,female,Home employees
+2014,134925.1667,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,female,Home employees
+2015,122101.4545,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,female,Home employees
+2016,122720.75,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,female,Home employees
+2017,110763.5833,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,female,Home employees
+2018,138173.1667,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,female,Home employees
+2019,137818.4167,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,female,Home employees
+2020,92711.125,Hogares como empleadores,Sector comercio y servicios,Home employees,Commerce and services,female,Home employees
+2010,3273.666667,No especificado,No especificado,Not specified,Not specified,female,"Communication and services, public administration and others"
+2011,2984.916667,No especificado,No especificado,Not specified,Not specified,female,"Communication and services, public administration and others"
+2012,2001.416667,No especificado,No especificado,Not specified,Not specified,female,"Communication and services, public administration and others"
+2013,987.4166667,No especificado,No especificado,Not specified,Not specified,female,"Communication and services, public administration and others"
+2014,2606.333333,No especificado,No especificado,Not specified,Not specified,female,"Communication and services, public administration and others"
+2015,2175.378788,No especificado,No especificado,Not specified,Not specified,female,"Communication and services, public administration and others"
+2016,2089.25,No especificado,No especificado,Not specified,Not specified,female,"Communication and services, public administration and others"
+2017,3534.583333,No especificado,No especificado,Not specified,Not specified,female,"Communication and services, public administration and others"
+2018,5878.833333,No especificado,No especificado,Not specified,Not specified,female,"Communication and services, public administration and others"
+2019,2364.416667,No especificado,No especificado,Not specified,Not specified,female,"Communication and services, public administration and others"
+2020,1620.25,No especificado,No especificado,Not specified,Not specified,female,"Communication and services, public administration and others"

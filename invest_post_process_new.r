@@ -1,27 +1,27 @@
 #post_process investment shock results
 
 #in pc
-  root<-"C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\"
-  ieem.folder<-"IEEM-en-GAMS-with-EXCAP-2021-01-25\\"
-  in.folder<-"calib_results\\"
-  out.folder<-"investment_result_all\\"
-  nm_files_out <- "user-files\\cri2016rand\\"
-  var.names.file.dir<-"IEEM-CR-Experiments-and-Analysis\\Vars_Code_v2.csv"
-  census.data.file.dir<-"IEEM-CR-Experiments-and-Analysis\\econ_indicators-annual_2010-2020_new.csv"
-  va.data.file.dir<-"IEEM-CR-Experiments-and-Analysis\\value_added-annual_2010-2020_new.csv"
+#  root<-"C:\\Users\\L03054557\\OneDrive\\Edmundo-ITESM\\3.Proyectos\\30. Costa Rica COVID19\\"
+#  ieem.folder<-"IEEM-en-GAMS-with-EXCAP-2021-01-25\\"
+#  in.folder<-"calib_results\\"
+#  out.folder<-"investment_result_all\\"
+#  nm_files_out <- "user-files\\cri2016rand\\"
+#  var.names.file.dir<-"IEEM-CR-Experiments-and-Analysis\\Vars_Code_v2.csv"
+#  census.data.file.dir<-"IEEM-CR-Experiments-and-Analysis\\econ_indicators-annual_2010-2020_new.csv"
+#  va.data.file.dir<-"IEEM-CR-Experiments-and-Analysis\\value_added-annual_2010-2020_new.csv"
   #ed.name<-"exp_design_2021_04_20_invest.csv"
 
 #in server
  root<-"D:\\1. Projects\\30. Costa Rica COVID19\\"
  ieem.folder<-"IEEM-en-GAMS-with-EXCAP-2021-01-25\\"
- #in.folder<-"calib_results\\"
- in.folder<-"invest_results_2021_04_07\\"
+ in.folder<-"calib_results\\"
+ #in.folder<-"invest_results_2021_04_07\\"
  out.folder<-"investment_result_all\\"
  nm_files_out <- "user-files\\cri2016rand\\"
- var.names.file.dir<-"IEEM-CR-Experiments-and-Analysis\\Vars_Code_v3.csv"
+ var.names.file.dir<-"IEEM-CR-Experiments-and-Analysis\\Vars_Code_v4.csv"
  census.data.file.dir<-"IEEM-CR-Experiments-and-Analysis\\econ_indicators-annual_2010-2020_new.csv"
  va.data.file.dir<-"IEEM-CR-Experiments-and-Analysis\\value_added-annual_2010-2020_new.csv"
- ed.name<-"exp_design_2021_04_07_invest.csv"
+ ed.name<- "exp_design_2021_06_18_invest_hm.csv" #"exp_design_2021_05_09_invest.csv"
 
 
 
@@ -178,11 +178,13 @@ macro
    meso_results<-apply(files,1,function(x){process.meso(x['meso'],var.names.file)})
    meso_results<-do.call('rbind',meso_results)
    ExpDesign<-read.csv(paste(root,ieem.folder,nm_files_out,ed.name,sep=""))
-   meso_results<-merge(meso_results,ExpDesign[,c("covid.shock","investment.shock","calib.run","Run.id")],by="Run.id",all.x=TRUE)
+   #meso_results<-merge(meso_results,ExpDesign[,c("covid.shock","investment.shock","calib.run","Run.id")],by="Run.id",all.x=TRUE)
+   meso_results<-merge(meso_results,ExpDesign[,c("covid.shock","investment.shock","calib.run","Run.id","shock.type")],by="Run.id",all.x=TRUE)
 
 #unique identifiers
-  meso_results$id<-with(meso_results,paste(calib.run,covid.shock,investment.shock,Scenario,sep="_"))
-  Ameso<-unique(meso_results[,c("id","calib.run","covid.shock","investment.shock","Scenario")])
+  meso_results$id<-with(meso_results,paste(calib.run,covid.shock,investment.shock,Scenario,shock.type,sep="_"))
+  #Ameso<-unique(meso_results[,c("id","calib.run","covid.shock","investment.shock","Scenario")])
+  Ameso<-unique(meso_results[,c("id","calib.run","covid.shock","investment.shock","Scenario","shock.type")])
   Ameso[,"COVID Recovery"]<-Ameso$covid.shock
   Ameso[,"COVID Recovery"]<-ifelse(Ameso$Scenario=='base',"n/a",Ameso[,"COVID Recovery"])
   Ameso$Include<-1
@@ -213,11 +215,11 @@ macro
                                                   ifelse(Ameso$investment.shock=='scenario 2','10-years of investment','15-years of investment')))
 
 
-  colnames(Ameso)<-c("id","Calibration_id","Recovery_code","Investment_id","End_tag","COVID Recovery","Include","Decarb Investment")
+  colnames(Ameso)<-c("id","Calibration_id","Recovery_code","Investment_id","End_tag","shock.type","COVID Recovery","Include","Decarb Investment")
 
 
-  write.csv(meso_results, paste0(root,ieem.folder,out.folder,"meso_report_2021_05_08.csv"), row.names=FALSE)
-  write.csv(Ameso, paste0(root,ieem.folder,out.folder,"attributes_meso_report_2021_05_08.csv"), row.names=FALSE)
+  write.csv(meso_results, paste0(root,ieem.folder,out.folder,"meso_report_2021_06_22.csv"), row.names=FALSE)
+  write.csv(Ameso, paste0(root,ieem.folder,out.folder,"attributes_meso_report_2021_06_22.csv"), row.names=FALSE)
 
 
 #append so is the same as before

@@ -1,0 +1,145 @@
+id,Calibration_id,Recovery_code,Investment_id,End_tag,COVID Recovery,Include,Decarb Investment,shock.type
+2728_1-year_scenario 0_base_original,2728,1-year,scenario 0,base,n/a,1,none,original
+2728_1-year_scenario 0_invest1yr_original,2728,1-year,scenario 0,invest1yr,1-year,1,none,original
+2728_1-year_scenario 1_base_original,2728,1-year,scenario 1,base,n/a,0,5-years of investment,original
+2728_1-year_scenario 1_invest1yr_original,2728,1-year,scenario 1,invest1yr,1-year,1,5-years of investment,original
+2728_1-year_scenario 2_base_original,2728,1-year,scenario 2,base,n/a,0,10-years of investment,original
+2728_1-year_scenario 2_invest1yr_original,2728,1-year,scenario 2,invest1yr,1-year,1,10-years of investment,original
+2728_1-year_scenario 3_base_original,2728,1-year,scenario 3,base,n/a,0,15-years of investment,original
+2728_1-year_scenario 3_invest1yr_original,2728,1-year,scenario 3,invest1yr,1-year,1,15-years of investment,original
+2728_3-year_scenario 0_base_original,2728,3-year,scenario 0,base,n/a,0,none,original
+2728_3-year_scenario 0_invest1yr_original,2728,3-year,scenario 0,invest1yr,3-year,1,none,original
+2728_3-year_scenario 1_base_original,2728,3-year,scenario 1,base,n/a,0,5-years of investment,original
+2728_3-year_scenario 1_invest1yr_original,2728,3-year,scenario 1,invest1yr,3-year,1,5-years of investment,original
+2728_3-year_scenario 2_base_original,2728,3-year,scenario 2,base,n/a,0,10-years of investment,original
+2728_3-year_scenario 2_invest1yr_original,2728,3-year,scenario 2,invest1yr,3-year,1,10-years of investment,original
+2728_3-year_scenario 3_base_original,2728,3-year,scenario 3,base,n/a,0,15-years of investment,original
+2728_3-year_scenario 3_invest1yr_original,2728,3-year,scenario 3,invest1yr,3-year,1,15-years of investment,original
+2728_5-year_scenario 0_base_original,2728,5-year,scenario 0,base,n/a,0,none,original
+2728_5-year_scenario 0_invest1yr_original,2728,5-year,scenario 0,invest1yr,5-year,1,none,original
+2728_5-year_scenario 1_base_original,2728,5-year,scenario 1,base,n/a,0,5-years of investment,original
+2728_5-year_scenario 1_invest1yr_original,2728,5-year,scenario 1,invest1yr,5-year,1,5-years of investment,original
+2728_5-year_scenario 2_base_original,2728,5-year,scenario 2,base,n/a,0,10-years of investment,original
+2728_5-year_scenario 2_invest1yr_original,2728,5-year,scenario 2,invest1yr,5-year,1,10-years of investment,original
+2728_5-year_scenario 3_base_original,2728,5-year,scenario 3,base,n/a,0,15-years of investment,original
+2728_5-year_scenario 3_invest1yr_original,2728,5-year,scenario 3,invest1yr,5-year,1,15-years of investment,original
+2547_1-year_scenario 0_base_original,2547,1-year,scenario 0,base,n/a,1,none,original
+2547_1-year_scenario 0_invest1yr_original,2547,1-year,scenario 0,invest1yr,1-year,1,none,original
+2547_1-year_scenario 1_base_original,2547,1-year,scenario 1,base,n/a,0,5-years of investment,original
+2547_1-year_scenario 1_invest1yr_original,2547,1-year,scenario 1,invest1yr,1-year,1,5-years of investment,original
+2547_1-year_scenario 2_base_original,2547,1-year,scenario 2,base,n/a,0,10-years of investment,original
+2547_1-year_scenario 2_invest1yr_original,2547,1-year,scenario 2,invest1yr,1-year,1,10-years of investment,original
+2547_1-year_scenario 3_base_original,2547,1-year,scenario 3,base,n/a,0,15-years of investment,original
+2547_1-year_scenario 3_invest1yr_original,2547,1-year,scenario 3,invest1yr,1-year,1,15-years of investment,original
+2547_3-year_scenario 0_base_original,2547,3-year,scenario 0,base,n/a,0,none,original
+2547_3-year_scenario 0_invest1yr_original,2547,3-year,scenario 0,invest1yr,3-year,1,none,original
+2547_3-year_scenario 1_base_original,2547,3-year,scenario 1,base,n/a,0,5-years of investment,original
+2547_3-year_scenario 1_invest1yr_original,2547,3-year,scenario 1,invest1yr,3-year,1,5-years of investment,original
+2547_3-year_scenario 2_base_original,2547,3-year,scenario 2,base,n/a,0,10-years of investment,original
+2547_3-year_scenario 2_invest1yr_original,2547,3-year,scenario 2,invest1yr,3-year,1,10-years of investment,original
+2547_3-year_scenario 3_base_original,2547,3-year,scenario 3,base,n/a,0,15-years of investment,original
+2547_3-year_scenario 3_invest1yr_original,2547,3-year,scenario 3,invest1yr,3-year,1,15-years of investment,original
+2547_5-year_scenario 0_base_original,2547,5-year,scenario 0,base,n/a,0,none,original
+2547_5-year_scenario 0_invest1yr_original,2547,5-year,scenario 0,invest1yr,5-year,1,none,original
+2547_5-year_scenario 1_base_original,2547,5-year,scenario 1,base,n/a,0,5-years of investment,original
+2547_5-year_scenario 1_invest1yr_original,2547,5-year,scenario 1,invest1yr,5-year,1,5-years of investment,original
+2547_5-year_scenario 2_base_original,2547,5-year,scenario 2,base,n/a,0,10-years of investment,original
+2547_5-year_scenario 2_invest1yr_original,2547,5-year,scenario 2,invest1yr,5-year,1,10-years of investment,original
+2547_5-year_scenario 3_base_original,2547,5-year,scenario 3,base,n/a,0,15-years of investment,original
+2547_5-year_scenario 3_invest1yr_original,2547,5-year,scenario 3,invest1yr,5-year,1,15-years of investment,original
+2542_1-year_scenario 0_base_original,2542,1-year,scenario 0,base,n/a,1,none,original
+2542_1-year_scenario 0_invest1yr_original,2542,1-year,scenario 0,invest1yr,1-year,1,none,original
+2542_1-year_scenario 1_base_original,2542,1-year,scenario 1,base,n/a,0,5-years of investment,original
+2542_1-year_scenario 1_invest1yr_original,2542,1-year,scenario 1,invest1yr,1-year,1,5-years of investment,original
+2542_1-year_scenario 2_base_original,2542,1-year,scenario 2,base,n/a,0,10-years of investment,original
+2542_1-year_scenario 2_invest1yr_original,2542,1-year,scenario 2,invest1yr,1-year,1,10-years of investment,original
+2542_1-year_scenario 3_base_original,2542,1-year,scenario 3,base,n/a,0,15-years of investment,original
+2542_1-year_scenario 3_invest1yr_original,2542,1-year,scenario 3,invest1yr,1-year,1,15-years of investment,original
+2542_3-year_scenario 0_base_original,2542,3-year,scenario 0,base,n/a,0,none,original
+2542_3-year_scenario 0_invest1yr_original,2542,3-year,scenario 0,invest1yr,3-year,1,none,original
+2542_3-year_scenario 1_base_original,2542,3-year,scenario 1,base,n/a,0,5-years of investment,original
+2542_3-year_scenario 1_invest1yr_original,2542,3-year,scenario 1,invest1yr,3-year,1,5-years of investment,original
+2542_3-year_scenario 2_base_original,2542,3-year,scenario 2,base,n/a,0,10-years of investment,original
+2542_3-year_scenario 2_invest1yr_original,2542,3-year,scenario 2,invest1yr,3-year,1,10-years of investment,original
+2542_3-year_scenario 3_base_original,2542,3-year,scenario 3,base,n/a,0,15-years of investment,original
+2542_3-year_scenario 3_invest1yr_original,2542,3-year,scenario 3,invest1yr,3-year,1,15-years of investment,original
+2542_5-year_scenario 0_base_original,2542,5-year,scenario 0,base,n/a,0,none,original
+2542_5-year_scenario 0_invest1yr_original,2542,5-year,scenario 0,invest1yr,5-year,1,none,original
+2542_5-year_scenario 1_base_original,2542,5-year,scenario 1,base,n/a,0,5-years of investment,original
+2542_5-year_scenario 1_invest1yr_original,2542,5-year,scenario 1,invest1yr,5-year,1,5-years of investment,original
+2542_5-year_scenario 2_base_original,2542,5-year,scenario 2,base,n/a,0,10-years of investment,original
+2542_5-year_scenario 2_invest1yr_original,2542,5-year,scenario 2,invest1yr,5-year,1,10-years of investment,original
+2542_5-year_scenario 3_base_original,2542,5-year,scenario 3,base,n/a,0,15-years of investment,original
+2542_5-year_scenario 3_invest1yr_original,2542,5-year,scenario 3,invest1yr,5-year,1,15-years of investment,original
+2728_1-year_scenario 0-updated_base_updated,2728,1-year,scenario 0-updated,base,n/a,1,none_updated,updated
+2728_1-year_scenario 0-updated_invest1yr_updated,2728,1-year,scenario 0-updated,invest1yr,1-year,1,none_updated,updated
+2728_1-year_scenario 1-updated_base_updated,2728,1-year,scenario 1-updated,base,n/a,0,5-years of investment_updated,updated
+2728_1-year_scenario 1-updated_invest1yr_updated,2728,1-year,scenario 1-updated,invest1yr,1-year,1,5-years of investment_updated,updated
+2728_1-year_scenario 2-updated_base_updated,2728,1-year,scenario 2-updated,base,n/a,0,10-years of investment_updated,updated
+2728_1-year_scenario 2-updated_invest1yr_updated,2728,1-year,scenario 2-updated,invest1yr,1-year,1,10-years of investment_updated,updated
+2728_1-year_scenario 3-updated_base_updated,2728,1-year,scenario 3-updated,base,n/a,0,15-years of investment_updated,updated
+2728_1-year_scenario 3-updated_invest1yr_updated,2728,1-year,scenario 3-updated,invest1yr,1-year,1,15-years of investment_updated,updated
+2728_3-year_scenario 0-updated_base_updated,2728,3-year,scenario 0-updated,base,n/a,0,none_updated,updated
+2728_3-year_scenario 0-updated_invest1yr_updated,2728,3-year,scenario 0-updated,invest1yr,3-year,1,none_updated,updated
+2728_3-year_scenario 1-updated_base_updated,2728,3-year,scenario 1-updated,base,n/a,0,5-years of investment_updated,updated
+2728_3-year_scenario 1-updated_invest1yr_updated,2728,3-year,scenario 1-updated,invest1yr,3-year,1,5-years of investment_updated,updated
+2728_3-year_scenario 2-updated_base_updated,2728,3-year,scenario 2-updated,base,n/a,0,10-years of investment_updated,updated
+2728_3-year_scenario 2-updated_invest1yr_updated,2728,3-year,scenario 2-updated,invest1yr,3-year,1,10-years of investment_updated,updated
+2728_3-year_scenario 3-updated_base_updated,2728,3-year,scenario 3-updated,base,n/a,0,15-years of investment_updated,updated
+2728_3-year_scenario 3-updated_invest1yr_updated,2728,3-year,scenario 3-updated,invest1yr,3-year,1,15-years of investment_updated,updated
+2728_5-year_scenario 0-updated_base_updated,2728,5-year,scenario 0-updated,base,n/a,0,none_updated,updated
+2728_5-year_scenario 0-updated_invest1yr_updated,2728,5-year,scenario 0-updated,invest1yr,5-year,1,none_updated,updated
+2728_5-year_scenario 1-updated_base_updated,2728,5-year,scenario 1-updated,base,n/a,0,5-years of investment_updated,updated
+2728_5-year_scenario 1-updated_invest1yr_updated,2728,5-year,scenario 1-updated,invest1yr,5-year,1,5-years of investment_updated,updated
+2728_5-year_scenario 2-updated_base_updated,2728,5-year,scenario 2-updated,base,n/a,0,10-years of investment_updated,updated
+2728_5-year_scenario 2-updated_invest1yr_updated,2728,5-year,scenario 2-updated,invest1yr,5-year,1,10-years of investment_updated,updated
+2728_5-year_scenario 3-updated_base_updated,2728,5-year,scenario 3-updated,base,n/a,0,15-years of investment_updated,updated
+2728_5-year_scenario 3-updated_invest1yr_updated,2728,5-year,scenario 3-updated,invest1yr,5-year,1,15-years of investment_updated,updated
+2547_1-year_scenario 0-updated_base_updated,2547,1-year,scenario 0-updated,base,n/a,1,none_updated,updated
+2547_1-year_scenario 0-updated_invest1yr_updated,2547,1-year,scenario 0-updated,invest1yr,1-year,1,none_updated,updated
+2547_1-year_scenario 1-updated_base_updated,2547,1-year,scenario 1-updated,base,n/a,0,5-years of investment_updated,updated
+2547_1-year_scenario 1-updated_invest1yr_updated,2547,1-year,scenario 1-updated,invest1yr,1-year,1,5-years of investment_updated,updated
+2547_1-year_scenario 2-updated_base_updated,2547,1-year,scenario 2-updated,base,n/a,0,10-years of investment_updated,updated
+2547_1-year_scenario 2-updated_invest1yr_updated,2547,1-year,scenario 2-updated,invest1yr,1-year,1,10-years of investment_updated,updated
+2547_1-year_scenario 3-updated_base_updated,2547,1-year,scenario 3-updated,base,n/a,0,15-years of investment_updated,updated
+2547_1-year_scenario 3-updated_invest1yr_updated,2547,1-year,scenario 3-updated,invest1yr,1-year,1,15-years of investment_updated,updated
+2547_3-year_scenario 0-updated_base_updated,2547,3-year,scenario 0-updated,base,n/a,0,none_updated,updated
+2547_3-year_scenario 0-updated_invest1yr_updated,2547,3-year,scenario 0-updated,invest1yr,3-year,1,none_updated,updated
+2547_3-year_scenario 1-updated_base_updated,2547,3-year,scenario 1-updated,base,n/a,0,5-years of investment_updated,updated
+2547_3-year_scenario 1-updated_invest1yr_updated,2547,3-year,scenario 1-updated,invest1yr,3-year,1,5-years of investment_updated,updated
+2547_3-year_scenario 2-updated_base_updated,2547,3-year,scenario 2-updated,base,n/a,0,10-years of investment_updated,updated
+2547_3-year_scenario 2-updated_invest1yr_updated,2547,3-year,scenario 2-updated,invest1yr,3-year,1,10-years of investment_updated,updated
+2547_3-year_scenario 3-updated_base_updated,2547,3-year,scenario 3-updated,base,n/a,0,15-years of investment_updated,updated
+2547_3-year_scenario 3-updated_invest1yr_updated,2547,3-year,scenario 3-updated,invest1yr,3-year,1,15-years of investment_updated,updated
+2547_5-year_scenario 0-updated_base_updated,2547,5-year,scenario 0-updated,base,n/a,0,none_updated,updated
+2547_5-year_scenario 0-updated_invest1yr_updated,2547,5-year,scenario 0-updated,invest1yr,5-year,1,none_updated,updated
+2547_5-year_scenario 1-updated_base_updated,2547,5-year,scenario 1-updated,base,n/a,0,5-years of investment_updated,updated
+2547_5-year_scenario 1-updated_invest1yr_updated,2547,5-year,scenario 1-updated,invest1yr,5-year,1,5-years of investment_updated,updated
+2547_5-year_scenario 2-updated_base_updated,2547,5-year,scenario 2-updated,base,n/a,0,10-years of investment_updated,updated
+2547_5-year_scenario 2-updated_invest1yr_updated,2547,5-year,scenario 2-updated,invest1yr,5-year,1,10-years of investment_updated,updated
+2547_5-year_scenario 3-updated_base_updated,2547,5-year,scenario 3-updated,base,n/a,0,15-years of investment_updated,updated
+2547_5-year_scenario 3-updated_invest1yr_updated,2547,5-year,scenario 3-updated,invest1yr,5-year,1,15-years of investment_updated,updated
+2542_1-year_scenario 0-updated_base_updated,2542,1-year,scenario 0-updated,base,n/a,1,none_updated,updated
+2542_1-year_scenario 0-updated_invest1yr_updated,2542,1-year,scenario 0-updated,invest1yr,1-year,1,none_updated,updated
+2542_1-year_scenario 1-updated_base_updated,2542,1-year,scenario 1-updated,base,n/a,0,5-years of investment_updated,updated
+2542_1-year_scenario 1-updated_invest1yr_updated,2542,1-year,scenario 1-updated,invest1yr,1-year,1,5-years of investment_updated,updated
+2542_1-year_scenario 2-updated_base_updated,2542,1-year,scenario 2-updated,base,n/a,0,10-years of investment_updated,updated
+2542_1-year_scenario 2-updated_invest1yr_updated,2542,1-year,scenario 2-updated,invest1yr,1-year,1,10-years of investment_updated,updated
+2542_1-year_scenario 3-updated_base_updated,2542,1-year,scenario 3-updated,base,n/a,0,15-years of investment_updated,updated
+2542_1-year_scenario 3-updated_invest1yr_updated,2542,1-year,scenario 3-updated,invest1yr,1-year,1,15-years of investment_updated,updated
+2542_3-year_scenario 0-updated_base_updated,2542,3-year,scenario 0-updated,base,n/a,0,none_updated,updated
+2542_3-year_scenario 0-updated_invest1yr_updated,2542,3-year,scenario 0-updated,invest1yr,3-year,1,none_updated,updated
+2542_3-year_scenario 1-updated_base_updated,2542,3-year,scenario 1-updated,base,n/a,0,5-years of investment_updated,updated
+2542_3-year_scenario 1-updated_invest1yr_updated,2542,3-year,scenario 1-updated,invest1yr,3-year,1,5-years of investment_updated,updated
+2542_3-year_scenario 2-updated_base_updated,2542,3-year,scenario 2-updated,base,n/a,0,10-years of investment_updated,updated
+2542_3-year_scenario 2-updated_invest1yr_updated,2542,3-year,scenario 2-updated,invest1yr,3-year,1,10-years of investment_updated,updated
+2542_3-year_scenario 3-updated_base_updated,2542,3-year,scenario 3-updated,base,n/a,0,15-years of investment_updated,updated
+2542_3-year_scenario 3-updated_invest1yr_updated,2542,3-year,scenario 3-updated,invest1yr,3-year,1,15-years of investment_updated,updated
+2542_5-year_scenario 0-updated_base_updated,2542,5-year,scenario 0-updated,base,n/a,0,none_updated,updated
+2542_5-year_scenario 0-updated_invest1yr_updated,2542,5-year,scenario 0-updated,invest1yr,5-year,1,none_updated,updated
+2542_5-year_scenario 1-updated_base_updated,2542,5-year,scenario 1-updated,base,n/a,0,5-years of investment_updated,updated
+2542_5-year_scenario 1-updated_invest1yr_updated,2542,5-year,scenario 1-updated,invest1yr,5-year,1,5-years of investment_updated,updated
+2542_5-year_scenario 2-updated_base_updated,2542,5-year,scenario 2-updated,base,n/a,0,10-years of investment_updated,updated
+2542_5-year_scenario 2-updated_invest1yr_updated,2542,5-year,scenario 2-updated,invest1yr,5-year,1,10-years of investment_updated,updated
+2542_5-year_scenario 3-updated_base_updated,2542,5-year,scenario 3-updated,base,n/a,0,15-years of investment_updated,updated
+2542_5-year_scenario 3-updated_invest1yr_updated,2542,5-year,scenario 3-updated,invest1yr,5-year,1,15-years of investment_updated,updated

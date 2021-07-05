@@ -1,0 +1,47 @@
+Sector,Sector_en,Sector_Calib,m,f,wtype
+arroz,Rice,"Agriculture, Livestock and fishing",0.5,0.5,lw
+otragr,Other agriculture,"Agriculture, Livestock and fishing",0.5,0.5,lw
+banano,Bannana,"Agriculture, Livestock and fishing",0.5,0.5,lw
+pinia,Pineaple,"Agriculture, Livestock and fishing",0.5,0.5,lw
+cafeenfruta,Coffee,"Agriculture, Livestock and fishing",0.5,0.5,lw
+for,Sivilculture,"Agriculture, Livestock and fishing",0.5,0.5,lw
+pesca,Fishing ,"Agriculture, Livestock and fishing",0.5,0.5,lw
+min,Mining,Manufacturing industry,0.5,0.5,hw
+arrozelaborado,Rice produce,Manufacturing industry,0.5,0.5,hw
+alimentos,Food,Manufacturing industry,0.5,0.5,lw
+prodcafe,Coffe produce,Manufacturing industry,0.5,0.5,hw
+bebtab,Drinks and tobbaco,Manufacturing industry,0.5,0.5,lw
+texcuero,Textiles and leather,Manufacturing industry,0.5,0.5,lw
+refpet,Oil refined,Manufacturing industry,0.5,0.5,hw
+cauchoplast,Plastic and rubber,Manufacturing industry,0.5,0.5,lw
+quimicos,Chemicals,Manufacturing industry,0.5,0.5,hw
+prodminnomet,"Mineral products, not methalic",Manufacturing industry,0.5,0.5,hw
+prodmet,Methalic products,Manufacturing industry,0.5,0.5,lw
+maq,Machinery and equipment,Manufacturing industry,0.5,0.5,hw
+vehiculos,Vehicles,Manufacturing industry,0.5,0.5,lw
+otrmnf,Other manufactures,Manufacturing industry,0.5,0.5,lw
+elegas,Electricity and gas,Manufacturing industry,0.5,0.5,hw
+agua,Water,Manufacturing industry,0.5,0.5,lw
+cns,Construction,Construction,0.5,0.5,lw
+comercio,Commerce,"Commerce, repairs,professional and administrative activities",0.5,0.5,lw
+trnsferrocarril,Rail transport,Transport and storage,0.5,0.5,lw
+trnstierrapasajeros,Land passenger transport,Transport and storage,0.5,0.5,lw
+taxis,Transportation taxis,Transport and storage,0.5,0.5,lw
+trnmarairecarga,Sea and air freight transport,Transport and storage,0.5,0.5,lw
+otrtrns,Other trasport,Transport and storage,0.5,0.5,lw
+hotelrest,Hotels and Restaurants,Hotels and restaurants,0.5,0.5,lw
+com,Telecommunications,Transport and storage,0.5,0.5,hw
+svcprf,Professional services,"Commerce, repairs,professional and administrative activities",0.5,0.5,lw
+fin,Financial Services,Finance,0.5,0.5,lw
+edu,Education,Education and health,0.5,0.5,lw
+salud,Health,Education and health,0.5,0.5,lw
+otrsvc,Other Services,"Communication and services, public administration and others",0.5,0.5,hw
+domest,Domestic services,Home employees,0.5,0.5,lw
+admpub,Public Administration,"Communication and services, public administration and others",0.5,0.5,lw
+bunker,bunker,Manufacturing industry,0.5,0.5,hw
+diesel,diesel,Manufacturing industry,0.5,0.5,hw
+gasolina,gasoline,Manufacturing industry,0.5,0.5,hw
+otrprodpetroleo,others oil,Manufacturing industry,0.5,0.5,lw
+total,total,total,0.5,0.5,NA
+trncarga,Freight transport,Transport and storage,0.5,0.5,hw
+trnsmarairepasajeros,Sea and air passenger transport,Transport and storage,0.5,0.5,hw

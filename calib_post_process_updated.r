@@ -321,8 +321,8 @@ census.va$Year<-NULL
  #in.folder<-"calib_results_2021_04_01\\" #part 1
  out.folder<-"calib_result_all\\"
  var.names.file.dir<-"IEEM-CR-Experiments-and-Analysis\\Vars_Code_v3.csv"
- census.data.file.dir<-"IEEM-CR-Experiments-and-Analysis\\econ_indicators-annual_2010-2020_new_gender.csv"
- va.data.file.dir<-"IEEM-CR-Experiments-and-Analysis\\value_added-annual_2010-2020_new_gender.csv"
+ census.data.file.dir<-"IEEM-CR-Experiments-and-Analysis\\econ_indicators-annual_2010-2020_new_by_gender.csv"
+ va.data.file.dir<-"IEEM-CR-Experiments-and-Analysis\\value_added-annual_2010-2020_new_by_gender.csv"
 
 # read list of files
    filenames.meso <- list.files(paste0(root,ieem.folder,in.folder,"meso//"), pattern="*.csv", full.names=FALSE)
